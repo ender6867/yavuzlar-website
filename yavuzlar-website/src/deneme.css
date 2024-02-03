@@ -1,0 +1,3131 @@
+/* Desktop - 2 */
+
+position: relative;
+width: 1440px;
+height: 4617px;
+
+background: #000818;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Ellipse */
+
+position: absolute;
+width: 2469.83px;
+height: 4349px;
+left: -414px;
+top: 600px;
+
+/* Ellipse 23 */
+
+position: absolute;
+width: 1000px;
+height: 1000px;
+left: calc(50% - 1000px / 2 + 1239px);
+top: 4072.61px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(7, 26, 94, 0.79) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+transform: rotate(118.79deg);
+
+/* Ellipse 22 */
+
+position: absolute;
+width: 1000px;
+height: 1000px;
+left: calc(50% - 1000px / 2 - 617px);
+top: 3070.66px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(7, 26, 94, 0.79) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+transform: rotate(-3.76deg);
+
+/* Ellipse 21 */
+
+position: absolute;
+width: 1000px;
+height: 1000px;
+left: calc(50% - 1000px / 2 + 1835.83px);
+top: 3253.12px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(7, 26, 94, 0.79) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+transform: rotate(149.55deg);
+
+/* Ellipse 20 */
+
+position: absolute;
+width: 1000px;
+height: 1000px;
+left: calc(50% - 1000px / 2 - 484px);
+top: 1849.23px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(7, 26, 94, 0.79) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+transform: rotate(-14.14deg);
+
+/* Ellipse 19 */
+
+position: absolute;
+width: 800px;
+height: 800px;
+left: 504.97px;
+top: 1389.44px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(10, 37, 134, 0.79) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+transform: rotate(170.68deg);
+
+/* Ellipse 18 */
+
+position: absolute;
+width: 800px;
+height: 800px;
+left: 1742.16px;
+top: 1778.4px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(7, 26, 94, 0.79) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+transform: rotate(142.7deg);
+
+/* footer */
+
+position: absolute;
+width: 1240px;
+height: 27px;
+left: 100px;
+bottom: 43px;
+
+/* icons8-instagram-500 (1) */
+
+position: absolute;
+width: 18.54px;
+height: 19px;
+left: 1240.49px;
+top: 4551px;
+
+background: url(icons8-instagram-500(1).png);
+
+/* icons8-twitter-500 */
+
+position: absolute;
+width: 19.51px;
+height: 20px;
+left: 1201.46px;
+top: 4551px;
+
+background: url(icons8-twitter-500.png);
+
+/* icons8-linkedin-500 (2) */
+
+position: absolute;
+width: 19.51px;
+height: 20px;
+left: 1162.44px;
+top: 4551px;
+
+background: url(icons8-linkedin-500(2).png);
+
+/* icons8-github-500 (2) */
+
+position: absolute;
+width: 25.37px;
+height: 26px;
+left: 1278.54px;
+top: 4547px;
+
+background: url(icons8-github-500(2).png);
+
+/* threads 1 */
+
+position: absolute;
+width: 16.59px;
+height: 17px;
+left: 1323.42px;
+top: 4552px;
+
+background: url(threads);
+
+/* © Copyrights 2021 Yavuzlar Web Takımı */
+
+position: absolute;
+width: 360px;
+height: 27px;
+left: 100px;
+top: 4547px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #ffffff;
+
+/* yatay-logo-text-team 1 */
+
+position: absolute;
+width: 350px;
+height: 76.05px;
+left: calc(50% - 350px / 2);
+top: 4360px;
+
+background: url(yatay-logo-text-team);
+
+/* up */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 1375px;
+top: 4540px;
+
+background: url(icons8-double-up-100.png);
+
+/* Contact */
+
+position: absolute;
+width: 1239px;
+height: 552px;
+left: calc(50% - 1239px / 2 + 0.5px);
+top: 3728px;
+
+/* İletişim */
+
+position: absolute;
+width: 206.12px;
+height: 45.13px;
+left: calc(50% - 206.12px / 2 + 1.07px);
+top: 3728px;
+
+/* İletişim */
+
+position: absolute;
+left: 22.11%;
+right: 22.09%;
+top: 0%;
+bottom: 0.3%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* İletişim */
+
+position: absolute;
+width: 1239px;
+height: 478px;
+left: 101px;
+top: 3802px;
+
+/* Rectangle 20 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1239px;
+height: 478px;
+left: calc(50% - 1239px / 2 + 0.5px);
+top: 3802px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+
+/* mesaj */
+
+position: absolute;
+width: 963px;
+height: 119.31px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 4043.03px;
+
+/* Mesaj */
+
+position: absolute;
+width: 55px;
+height: 27px;
+left: 27px;
+top: 15px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* left */
+
+position: absolute;
+width: 21px;
+left: 0px;
+top: 0px;
+bottom: 0.31px;
+
+border: 1px solid #73cd07;
+border-radius: 15px;
+
+/* right */
+
+position: absolute;
+width: 21px;
+right: -21px;
+top: 0px;
+bottom: 0.31px;
+
+border: 1px solid #73cd07;
+border-radius: 15px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* top */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+height: 18px;
+left: 21px;
+right: 14px;
+top: -9px;
+
+/* smallabel */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 9px 0px 6px;
+gap: 10px;
+isolation: isolate;
+
+width: 50px;
+height: 18px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Mesaj */
+
+position: absolute;
+width: 37px;
+height: 18px;
+left: calc(50% - 37px / 2 - 0.5px);
+top: calc(50% - 18px / 2);
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #73cd07;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+/* top-vec */
+
+width: 878px;
+height: 0px;
+
+border: 1px solid #73cd07;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* bottom-vec */
+
+position: absolute;
+height: 0px;
+left: 19px;
+right: 15px;
+bottom: 0.31px;
+
+border: 1px solid #73cd07;
+
+/* konu */
+
+position: absolute;
+width: 963px;
+height: 50.15px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 3964.02px;
+
+/* Konu */
+
+position: absolute;
+width: 48px;
+height: 27px;
+left: 27px;
+top: 12px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* left */
+
+position: absolute;
+width: 21px;
+left: 0px;
+top: 0px;
+bottom: 0.15px;
+
+border: 1px solid #73cd07;
+border-radius: 15px;
+
+/* right */
+
+position: absolute;
+width: 21px;
+right: -21px;
+top: 0px;
+bottom: 0.15px;
+
+border: 1px solid #73cd07;
+border-radius: 15px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* top */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+height: 18px;
+left: 21px;
+right: 14px;
+top: -9px;
+
+/* smallabel */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 9px 0px 6px;
+gap: 10px;
+isolation: isolate;
+
+width: 45px;
+height: 18px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Konu */
+
+position: absolute;
+width: 33px;
+height: 18px;
+left: calc(50% - 33px / 2);
+top: calc(50% - 18px / 2);
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #73cd07;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+/* top-vec */
+
+width: 883px;
+height: 0px;
+
+border: 1px solid #73cd07;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* bottom-vec */
+
+position: absolute;
+height: 0px;
+left: 19px;
+right: 15px;
+bottom: 0.15px;
+
+border: 1px solid #73cd07;
+
+/* eposta */
+
+position: absolute;
+width: 963px;
+height: 49.15px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 3886px;
+
+/* E-posta */
+
+position: absolute;
+width: 73px;
+height: 27px;
+left: 26px;
+top: 13px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* left */
+
+position: absolute;
+width: 21px;
+left: 0px;
+top: 0px;
+bottom: 0.15px;
+
+border: 1px solid #73cd07;
+border-radius: 15px;
+
+/* right */
+
+position: absolute;
+width: 21px;
+right: -21px;
+top: 0px;
+bottom: 0.15px;
+
+border: 1px solid #73cd07;
+border-radius: 15px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* top */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+height: 18px;
+left: 21px;
+right: 14px;
+top: -9px;
+
+/* smallabel */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 6px;
+gap: 10px;
+isolation: isolate;
+
+width: 61px;
+height: 18px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* E-posta */
+
+position: absolute;
+width: 49px;
+height: 18px;
+left: 6px;
+top: 0px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #73cd07;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+/* top-vec */
+
+width: 867px;
+height: 0px;
+
+border: 1px solid #73cd07;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* bottom-vec */
+
+position: absolute;
+height: 0px;
+left: 19px;
+right: 15px;
+bottom: 0.15px;
+
+border: 1px solid #73cd07;
+
+/* Buton-G */
+
+position: absolute;
+width: 963px;
+height: 56.17px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 4191.54px;
+
+/* background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 4.84%;
+bottom: 6.45%;
+
+background: linear-gradient(
+  100.78deg,
+  rgba(255, 255, 255, 0.1) -33.92%,
+  rgba(255, 255, 255, 0) 139.44%
+);
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 15px;
+
+/* GÖNDER */
+
+position: absolute;
+left: 45.96%;
+right: 46.15%;
+top: 25.64%;
+bottom: 26.29%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #73cd07;
+
+/* Bilgilerinizi bırakın, en kısa sürede sizinle iletişime geçeceğiz. */
+
+position: absolute;
+width: 630.89px;
+height: 26.33px;
+left: calc(50% - 630.89px / 2 + 0.5px);
+top: 3830.62px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #73cd07;
+
+/* yazı-3 */
+
+position: absolute;
+visibility: hidden;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 3562px;
+
+/* background */
+
+position: absolute;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 963px);
+top: 0px;
+
+background: url(Ekran görüntüsü 2024-01-28 214505);
+border: 1px solid #73cd07;
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Front-end Teknolojileri */
+
+position: absolute;
+width: 208px;
+height: 27px;
+left: calc(50% - 208px / 2 - 266.5px);
+top: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #ffffff;
+
+/* logo */
+
+position: absolute;
+width: 54.32px;
+height: 50px;
+left: 30px;
+top: 15px;
+
+background: url(ATT.png);
+
+/* yazı-2 */
+
+position: absolute;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 3452px;
+
+/* background */
+
+position: absolute;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 963px);
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+border: 1px solid #73cd07;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Front-end Teknolojileri */
+
+position: absolute;
+width: 208px;
+height: 27px;
+left: calc(50% - 208px / 2 - 266.5px);
+top: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #ffffff;
+
+/* logo */
+
+position: absolute;
+width: 54.32px;
+height: 50px;
+left: 30px;
+top: 15px;
+
+background: url(ATT.png);
+
+/* Ekran görüntüsü 2024-01-28 214505 1 */
+
+position: absolute;
+visibility: hidden;
+width: 318px;
+height: 80px;
+left: 645px;
+top: 0px;
+
+background: url(Ekran görüntüsü 2024-01-28 214505);
+border: 1px solid #73cd07;
+border-radius: 30px;
+
+/* Rectangle 25 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 318px;
+height: 80px;
+left: 645px;
+top: 0px;
+
+background: url(Ekran görüntüsü 2024-01-28 214505);
+border: 1px solid #73cd07;
+
+/* yazı-2 */
+
+position: absolute;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 - 9.5px);
+top: 3342px;
+
+/* background */
+
+position: absolute;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 963px);
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+border: 1px solid #73cd07;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Front-end Teknolojileri */
+
+position: absolute;
+width: 208px;
+height: 27px;
+left: calc(50% - 208px / 2 - 266.5px);
+top: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #ffffff;
+
+/* logo */
+
+position: absolute;
+width: 54.32px;
+height: 50px;
+left: 30px;
+top: 15px;
+
+background: url(ATT.png);
+
+/* Ekran görüntüsü 2024-01-28 214505 1 */
+
+position: absolute;
+visibility: hidden;
+width: 318px;
+height: 80px;
+left: 645px;
+top: 0px;
+
+background: url(Ekran görüntüsü 2024-01-28 214505);
+border: 1px solid #73cd07;
+border-radius: 30px;
+
+/* Rectangle 25 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 318px;
+height: 80px;
+left: 645px;
+top: 0px;
+
+background: url(Ekran görüntüsü 2024-01-28 214505);
+border: 1px solid #73cd07;
+
+/* yazı-1 */
+
+position: absolute;
+visibility: hidden;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 3342px;
+
+/* background */
+
+position: absolute;
+width: 963px;
+height: 80px;
+left: calc(50% - 963px / 2 + 963px);
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+border: 1px solid #73cd07;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Front-end Teknolojileri */
+
+position: absolute;
+width: 208px;
+height: 27px;
+left: calc(50% - 208px / 2 - 266.5px);
+top: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #ffffff;
+
+/* logo */
+
+position: absolute;
+width: 54.32px;
+height: 50px;
+left: 30px;
+top: 15px;
+
+background: url(ATT.png);
+
+/* icons8-arrow-100 1 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 900px;
+top: 20px;
+
+background: url(icons8-arrow-100.png);
+
+/* Yazılarımız */
+
+position: absolute;
+width: 404px;
+height: 45px;
+left: calc(50% - 404px / 2);
+top: 3267px;
+
+/* Son Yazılarımız */
+
+position: absolute;
+left: 20.49%;
+right: 20.6%;
+top: 0%;
+bottom: 0%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* projects-cards */
+
+position: absolute;
+width: 963px;
+height: 584px;
+left: calc(50% - 963px / 2 + 0.5px);
+top: 2603px;
+
+/* card3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 450px;
+height: 487.8px;
+left: 513px;
+top: 27.1px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.1);
+filter: blur(5px);
+backdrop-filter: blur(18px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 27px;
+
+/* Rectangle 24 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 450px;
+height: 162px;
+left: 0px;
+top: 325.8px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(0, 0, 0, 0.05) -17.61%,
+  rgba(0, 0, 0, 0.02) 119.73%
+);
+border-top: 1px solid #73cd07;
+box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 0px 0px 27px 27px;
+
+/* TEXT */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 9px;
+
+position: absolute;
+left: 6.6%;
+right: 6.8%;
+top: 71.4%;
+bottom: 2.95%;
+
+/* CTFGo */
+
+width: 162.9px;
+height: 40.5px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* CTFGo */
+
+position: absolute;
+left: 22.04%;
+right: 22.71%;
+top: 0%;
+bottom: -1.23%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 27px;
+line-height: 40px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur. */
+
+width: 386.1px;
+height: 62.1px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 14.58px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* github-link */
+
+position: absolute;
+width: 54px;
+height: 54px;
+left: 371.7px;
+top: 298.8px;
+
+/* Ellipse 35 */
+
+position: absolute;
+width: 54px;
+height: 54px;
+left: 371.7px;
+top: 298.8px;
+
+background: #73cd07;
+
+/* icons8-github-500 (2) */
+
+position: absolute;
+width: 45px;
+height: 45px;
+left: 376.2px;
+top: 303.3px;
+
+background: url(icons8-github-500(2).png);
+
+/* ctfgo1 */
+
+position: absolute;
+width: 225px;
+height: 225px;
+left: 112.5px;
+top: 50.4px;
+
+background: url(ctfgo1.png);
+border-radius: 27px;
+
+/* card2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 450px;
+height: 487.8px;
+left: 0px;
+top: 27.1px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.1);
+filter: blur(5px);
+backdrop-filter: blur(18px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 27px;
+
+/* Rectangle 24 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 450px;
+height: 162px;
+left: 0px;
+top: 325.8px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(0, 0, 0, 0.05) -17.61%,
+  rgba(0, 0, 0, 0.02) 119.73%
+);
+border-top: 1px solid #73cd07;
+box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 0px 0px 27px 27px;
+
+/* TEXT */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 9px;
+
+position: absolute;
+left: 6.6%;
+right: 6.8%;
+top: 71.4%;
+bottom: 2.95%;
+
+/* BLADIA */
+
+width: 162.9px;
+height: 40.5px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* BLADIA */
+
+position: absolute;
+left: 19.89%;
+right: 19.34%;
+top: 0%;
+bottom: -1.23%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 27px;
+line-height: 40px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır. */
+
+width: 386.1px;
+height: 62.1px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 14.58px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* github-link */
+
+position: absolute;
+width: 54px;
+height: 54px;
+left: 371.7px;
+top: 298.8px;
+
+/* Ellipse 35 */
+
+position: absolute;
+width: 54px;
+height: 54px;
+left: 371.7px;
+top: 298.8px;
+
+background: #73cd07;
+
+/* icons8-github-500 (2) */
+
+position: absolute;
+width: 45px;
+height: 45px;
+left: 376.2px;
+top: 303.3px;
+
+background: url(icons8-github-500(2).png);
+
+/* bladia */
+
+position: absolute;
+width: 225px;
+height: 225px;
+left: calc(50% - 225px / 2);
+top: 52.2px;
+
+background: url(bladia.png);
+
+/* card1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 500px;
+height: 542px;
+left: 225.5px;
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+
+/* Rectangle 24 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 500px;
+height: 180px;
+left: 0px;
+top: 362px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(0, 0, 0, 0.05) -17.61%,
+  rgba(0, 0, 0, 0.02) 119.73%
+);
+border-top: 1px solid #73cd07;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 0px 0px 30px 30px;
+
+/* TEXT */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+left: 6.6%;
+right: 6.8%;
+top: 70.66%;
+bottom: 3.69%;
+
+/* VulnLab */
+
+width: 181px;
+height: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* VulnLab */
+
+position: absolute;
+left: 14.92%;
+right: 14.92%;
+top: 0%;
+bottom: 0%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar. */
+
+width: 429px;
+height: 69px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* vulnlab 1 */
+
+position: absolute;
+width: 250px;
+height: 250px;
+left: 125px;
+top: 61px;
+
+background: url(vulnlab.png);
+border-radius: 30px;
+
+/* github-link */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 413px;
+top: 332px;
+
+/* Ellipse 35 */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 413px;
+top: 332px;
+
+background: #73cd07;
+
+/* icons8-github-500 (2) */
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 418px;
+top: 337px;
+
+background: url(icons8-github-500(2).png);
+
+/* sekme */
+
+position: absolute;
+width: 63px;
+height: 13px;
+left: calc(50% - 63px / 2);
+top: 560px;
+
+/* Ellipse 36 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 450px;
+top: 560px;
+
+border: 1px solid #73cd07;
+
+/* Ellipse 37 */
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 475px;
+top: 560px;
+
+background: #73cd07;
+
+/* Ellipse 38 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 500px;
+top: 560px;
+
+border: 1px solid #73cd07;
+
+/* Projects */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 1029px;
+height: 149px;
+left: calc(50% - 1029px / 2 - 0.5px);
+top: calc(50% - 149px / 2 + 136px);
+
+/* Projelerimiz */
+
+width: 181px;
+height: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Projelerimiz */
+
+position: absolute;
+left: -0.55%;
+right: -0.55%;
+top: 0%;
+bottom: 0%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* Projelerimizi oluştururken, ülkemizin siber güvenlik alanındaki istihdamına katkı sağlamak ve farkındalık oluşturmayı hedefliyoruz. Geliştirdiğimiz yazılımlar ile siber alanda milli güvenliğimizi, iç ve dış tehditlere karşı arttırmayı amaçlıyoruz. */
+
+width: 1026px;
+height: 81px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Count */
+
+position: absolute;
+width: 1240px;
+height: 220px;
+left: calc(50% - 1240px / 2 + 0px);
+top: 2068px;
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1237px;
+height: 220px;
+left: 1337px;
+top: 2068px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Counts */
+
+position: absolute;
+width: 1240px;
+height: 220px;
+left: 100px;
+top: 2068px;
+
+/* Rectangle 20 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1240px;
+height: 220px;
+left: 100px;
+top: 2068px;
+
+border-radius: 30px;
+
+/* sunum */
+
+position: absolute;
+width: 189px;
+height: 123px;
+left: 1085px;
+top: 2121px;
+
+/* 1 */
+
+position: absolute;
+width: 29px;
+height: 113px;
+left: 1085px;
+top: 2121px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 75px;
+line-height: 112px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Sunum */
+
+position: absolute;
+width: 111px;
+height: 45px;
+left: 1163px;
+top: 2199px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* icons8-presentation-100 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 74px;
+height: 74px;
+left: 1182px;
+top: 2126px;
+
+background: url(icons8-presentation-100.png);
+border: 1px solid #000000;
+
+/* makale */
+
+position: absolute;
+width: 194px;
+height: 123px;
+left: 789px;
+top: 2120px;
+
+/* 1 */
+
+position: absolute;
+width: 29px;
+height: 113px;
+left: 789px;
+top: 2120px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 75px;
+line-height: 112px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Makale */
+
+position: absolute;
+width: 115px;
+height: 45px;
+left: 868px;
+top: 2198px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* icons8-article-100 */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 894px;
+top: 2123px;
+
+background: url(icons8-article-100.png);
+
+/* proje */
+
+position: absolute;
+width: 170px;
+height: 129px;
+left: 483px;
+top: 2116px;
+
+/* 1 */
+
+position: absolute;
+width: 29px;
+height: 113px;
+left: 483px;
+top: 2122px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 75px;
+line-height: 112px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Proje */
+
+position: absolute;
+width: 78px;
+height: 45px;
+left: 575px;
+top: 2200px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* icons8-brainstorm-skill-100 (1) */
+
+position: absolute;
+width: 76px;
+height: 76px;
+left: 652px;
+top: 2116px;
+
+background: url(icons8-brainstorm-skill-100(1).png);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* üye */
+
+position: absolute;
+width: 170px;
+height: 128px;
+left: 178px;
+top: 2116px;
+
+/* 1 */
+
+position: absolute;
+width: 29px;
+height: 113px;
+left: 178px;
+top: 2121px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 75px;
+line-height: 112px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Üye */
+
+position: absolute;
+width: 59px;
+height: 45px;
+left: 281px;
+top: 2199px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* icons8-team-96 2 */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 273px;
+top: 2116px;
+
+background: url(icons8-team-96.png);
+
+/* About */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 1029px;
+height: 243px;
+left: calc(50% - 1029px / 2 - 0.5px);
+top: calc(50% - 243px / 2 - 596px);
+
+/* Hakkımızda */
+
+width: 181px;
+height: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Hakkımızda */
+
+position: absolute;
+left: -1.66%;
+right: -1.66%;
+top: 0%;
+bottom: 0%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(
+  87.71deg,
+  #ffffff -7.47%,
+  #73cd07 29.38%,
+  #73cd07 96.5%,
+  #73cd07 96.51%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* Yavuzlar; Siber Vatan projesi altında kurulan, web güvenliği, web geliştirme ve siber istihbarat alanlarında çalışan ve projeler üreten bir siber güvenlik takımıdır. Ülkemizde web güvenliği alanında ihtiyaç duyulan yetişmiş uzman ihtiyacının karşılanmasına katkı sağlamak amacıyla Web Güvenliği Uzmanı yetiştirmeyi ilke edinmiştir. Takım üyelerini geliştirmek ve ülkemizin siber güvenlik sektöründeki yerli ürün yelpazesini geliştirmek amacıyla çeşitli projeler yürütülmektedir. */
+
+width: 1034px;
+height: 171px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* security-shield */
+
+position: absolute;
+width: 571px;
+height: 571px;
+left: calc(50% - 571px / 2 + 0.5px);
+top: 1426px;
+
+background: url(security-shield.png);
+opacity: 0.05;
+
+/* expert-frame */
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 991px;
+top: 869px;
+
+/* back-expert */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 349px;
+top: 0px;
+
+border: 1px solid #73cd07;
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 349px;
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Web Güvenliği alanında emin adımlarla ilerliyoruz. */
+
+position: absolute;
+width: 366px;
+height: 54px;
+left: calc(50% - 366px / 2 + 366.5px);
+top: calc(50% - 54px / 2 + 0.5px);
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+opacity: 0;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* front-expert */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 0px;
+top: 0px;
+
+border: 1px solid #73cd07;
+border-radius: 30px;
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 0px;
+top: 0px;
+
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+
+/* Dikey Uzmanlaşma */
+
+position: absolute;
+width: 300px;
+height: 45px;
+left: calc(50% - 300px / 2 + 0.5px);
+top: 337px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Group 7 */
+
+position: absolute;
+width: 234px;
+height: 199.69px;
+left: 56px;
+top: 85px;
+
+/* rocket */
+
+position: absolute;
+visibility: hidden;
+width: 222px;
+height: 224px;
+left: calc(50% - 222px / 2 + 0.5px);
+top: 85px;
+
+background: url(Rokettt);
+
+/* rocket */
+
+position: absolute;
+width: 167px;
+height: 165.69px;
+left: calc(50% - 167px / 2);
+top: 119px;
+
+background: url(Rokettt1.png);
+
+/* Ellipse 30 */
+
+position: absolute;
+width: 26.91px;
+height: 26.91px;
+left: 263px;
+top: 229px;
+
+background: linear-gradient(
+  316.19deg,
+  #079a66 -50%,
+  #54cf9b 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 34 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 270px;
+top: 119px;
+
+background: linear-gradient(
+  316.19deg,
+  #079a66 -50%,
+  #54cf9b 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 31 */
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 65px;
+top: 85px;
+
+background: linear-gradient(
+  316.19deg,
+  #079a66 -50%,
+  #54cf9b 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 32 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 56px;
+top: 224px;
+
+background: linear-gradient(
+  316.19deg,
+  #079a66 -50%,
+  #54cf9b 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 33 */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 87px;
+top: 161px;
+
+background: linear-gradient(
+  316.19deg,
+  #079a66 -50%,
+  #54cf9b 52.73%,
+  #ffffff 176.66%
+);
+
+/* team-frame */
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: calc(50% - 349px / 2 + 0.5px);
+top: 869px;
+
+/* back-team */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 349px;
+top: 0px;
+
+border: 1px solid #73cd07;
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 349px;
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Tecrübelerimizi tüm takıma aktarabilmek için takım içi eğitimler düzenliyoruz. */
+
+position: absolute;
+width: 308px;
+height: 81px;
+left: calc(50% - 308px / 2 + 307.5px);
+top: calc(50% - 81px / 2);
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+opacity: 0;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* front-team */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 0px;
+top: 0px;
+
+border: 1px solid #73cd07;
+border-radius: 30px;
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 0px;
+top: 0px;
+
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+
+/* Takım İçi Eğitimler */
+
+position: absolute;
+width: 285px;
+height: 45px;
+left: calc(50% - 285px / 2);
+top: 342px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Group 6 */
+
+position: absolute;
+width: 245.91px;
+height: 176.81px;
+left: calc(50% - 245.91px / 2 + 4.45px);
+top: 90px;
+
+/* pc */
+
+position: absolute;
+visibility: hidden;
+width: 235.97px;
+height: 253.56px;
+left: 56px;
+top: 81px;
+
+background: url(Pccc);
+
+/* pc */
+
+position: absolute;
+visibility: hidden;
+width: 165px;
+height: 158.92px;
+left: 93px;
+top: 108px;
+
+background: url(Pccc1.png);
+
+/* pc */
+
+position: absolute;
+width: 168px;
+height: 161.81px;
+left: 93px;
+top: 105px;
+
+background: url(Pccc4.png);
+
+/* Ellipse 25 */
+
+position: absolute;
+width: 26.91px;
+height: 26.91px;
+left: 275px;
+top: 223px;
+
+background: linear-gradient(
+  316.19deg,
+  #2080e6 -50%,
+  #238fed 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 26 */
+
+position: absolute;
+width: 19.66px;
+height: 19.66px;
+left: 56px;
+top: 225.89px;
+
+background: linear-gradient(
+  316.19deg,
+  #2080e6 -50%,
+  #238fed 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 27 */
+
+position: absolute;
+width: 17.59px;
+height: 17.59px;
+left: 66px;
+top: 90px;
+
+background: linear-gradient(
+  316.19deg,
+  #2080e6 -50%,
+  #238fed 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 28 */
+
+position: absolute;
+width: 17.59px;
+height: 17.59px;
+left: 257px;
+top: 128px;
+
+background: linear-gradient(
+  316.19deg,
+  #2080e6 -50%,
+  #238fed 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 29 */
+
+position: absolute;
+width: 11.38px;
+height: 11.38px;
+left: 82px;
+top: 166px;
+
+background: linear-gradient(
+  316.19deg,
+  #2080e6 -50%,
+  #238fed 52.73%,
+  #ffffff 176.66%
+);
+
+/* project-frame */
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 101px;
+top: 869px;
+
+/* back-project */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 349px;
+top: 0px;
+
+border: 1px solid #73cd07;
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 349px;
+top: 0px;
+
+background: linear-gradient(
+  149.37deg,
+  rgba(255, 255, 255, 0.05) -17.61%,
+  rgba(255, 255, 255, 0.02) 119.73%
+);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Bilgi birikimimizi ve tecrübemizi yenilikçi projeler üreterek değerlendiriyoruz. */
+
+position: absolute;
+width: 308px;
+height: 81px;
+left: calc(50% - 308px / 2 + 307.5px);
+top: calc(50% - 81px / 2);
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+opacity: 0;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* front-project */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 0px;
+top: 0px;
+
+border: 1px solid #73cd07;
+border-radius: 30px;
+
+/* background */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 349px;
+height: 485px;
+left: 0px;
+top: 0px;
+
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30px;
+
+/* Yenilikçi Projeler */
+
+position: absolute;
+width: 256px;
+height: 45px;
+left: calc(50% - 256px / 2 + 0.5px);
+top: 341px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Group 5 */
+
+position: absolute;
+width: 227.37px;
+height: 186.36px;
+left: calc(50% - 227.37px / 2 - 5.82px);
+top: 83.52px;
+
+/* project */
+
+position: absolute;
+visibility: hidden;
+width: 239px;
+height: 260.15px;
+left: 55px;
+top: 74px;
+
+background: url(Ampulll);
+
+/* project */
+
+position: absolute;
+width: 145px;
+height: 176.88px;
+left: 94px;
+top: 93px;
+
+background: url(Ampulll1.png);
+
+/* Ellipse 20 */
+
+position: absolute;
+width: 16.92px;
+height: 16.92px;
+left: 55px;
+top: 224.17px;
+
+background: linear-gradient(
+  316.19deg,
+  #f3a502 -50%,
+  #e5b95d 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 21 */
+
+position: absolute;
+width: 11.63px;
+height: 11.63px;
+left: 79.32px;
+top: 161.77px;
+
+background: linear-gradient(
+  316.19deg,
+  #f3a502 -50%,
+  #e5b95d 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 22 */
+
+position: absolute;
+width: 19.04px;
+height: 19.04px;
+left: 71.92px;
+top: 83.52px;
+
+background: linear-gradient(
+  316.19deg,
+  #f3a502 -50%,
+  #e5b95d 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 23 */
+
+position: absolute;
+width: 16.92px;
+height: 16.92px;
+left: 239.01px;
+top: 118.42px;
+
+background: linear-gradient(
+  316.19deg,
+  #f3a502 -50%,
+  #e5b95d 52.73%,
+  #ffffff 176.66%
+);
+
+/* Ellipse 24 */
+
+position: absolute;
+width: 26.44px;
+height: 26.44px;
+left: 255.93px;
+top: 228.4px;
+
+background: linear-gradient(
+  316.19deg,
+  #f3a502 -50%,
+  #e5b95d 52.73%,
+  #ffffff 176.66%
+);
+
+/* Intro */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 662px;
+height: 303px;
+left: calc(50% - 662px / 2 - 289px);
+top: calc(50% - 303px / 2 - 1819.5px);
+
+/* Title */
+
+width: 530px;
+height: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* İçin Beraber Çalışalım */
+
+position: absolute;
+width: 341px;
+height: 45px;
+left: 189px;
+top: 0px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #ffffff;
+
+/* Siber Vatan */
+
+position: absolute;
+width: 181px;
+height: 45px;
+left: -10px;
+top: 0px;
+
+/* Siber Vatan */
+
+position: absolute;
+left: 4.42%;
+right: -4.42%;
+top: 0%;
+bottom: 0%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #73cd07;
+
+/* Yavuzlar Takımı, Siber Vatan projesi kapsamında kurulan ve web güvenliği odaklı çalışan bir siber güvenlik takımıdır. Misyonumuz, her bir takım üyesinin alanında yetkin hale gelmesini sağlamak ve ülkemizin siber güvenlik sektöründeki yerli proje sayısını arttırmak amacıyla çeşitli projeler yürütmektir. */
+
+width: 660px;
+height: 136px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Buton-ledli */
+
+width: 330px;
+height: 62px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 4.84%;
+bottom: 6.45%;
+
+background: linear-gradient(
+  100.78deg,
+  rgba(255, 255, 255, 0.1) -33.92%,
+  rgba(255, 255, 255, 0) 139.44%
+);
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.1));
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 15px;
+
+/* HAKKIMIZDA */
+
+position: absolute;
+left: 33.03%;
+right: 32.73%;
+top: 27.42%;
+bottom: 29.03%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #73cd07;
+
+/* Logo */
+
+position: absolute;
+width: 800px;
+height: 800px;
+left: 742px;
+top: 105px;
+
+/* Ellipse 18 */
+
+position: absolute;
+width: 800px;
+height: 800px;
+left: 742px;
+top: 105px;
+
+background: conic-gradient(
+  from 179.19deg at 49.25% 46.74%,
+  #ffffff 0deg,
+  #ffffff 0.04deg,
+  #00b633 78.75deg,
+  #73cd07 187.5deg,
+  rgba(10, 37, 134, 0.8) 268.13deg,
+  #00239f 360deg
+);
+filter: blur(250px);
+
+/* logo */
+
+position: absolute;
+width: 600px;
+height: 552.24px;
+left: 798px;
+top: 199px;
+
+background: url(ATT.png);
+
+/* Bar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 232px;
+
+position: absolute;
+width: 1242px;
+height: 64px;
+left: 96px;
+top: 23px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+/* orjYavuzlar 1 */
+
+margin: 0 auto;
+width: 250px;
+height: 62px;
+
+background: url(orjYavuzlar);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Titles */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 45px;
+
+margin: 0 auto;
+width: 806px;
+height: 27.25px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Anasayfa */
+
+width: 89px;
+height: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Hakkımızda */
+
+width: 109px;
+height: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #ffffff;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Projelerimiz */
+
+width: 107px;
+height: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #ffffff;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Yazılarımız */
+
+width: 101px;
+height: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #ffffff;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* İletişim */
+
+width: 67px;
+height: 27px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #ffffff;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+/* Lang */
+
+width: 108px;
+height: 27.25px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+/* Türkçe */
+
+position: absolute;
+width: 63px;
+height: 27px;
+left: 743px;
+top: 0px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #ffffff;
+
+opacity: 0.6;
+
+/* Flag */
+
+position: absolute;
+width: 35px;
+height: 26.25px;
+left: 698px;
+top: 1px;
+
+/* Vector */
+
+position: absolute;
+left: 86.6%;
+right: 9.06%;
+top: 3.67%;
+bottom: 0%;
+
+background: #e30a17;
+border-radius: 5px;
+
+/* Vector */
+
+position: absolute;
+left: 87.71%;
+right: 10.64%;
+top: 29.28%;
+bottom: 22.6%;
+
+background: #ffffff;
+
+/* Vector */
+
+position: absolute;
+left: 88.08%;
+right: 10.6%;
+top: 34.09%;
+bottom: 27.41%;
+
+background: #e30a17;
+
+/* Vector */
+
+position: absolute;
+left: 89.24%;
+right: 10.01%;
+top: 42.08%;
+bottom: 35.68%;
+
+background: #ffffff;
