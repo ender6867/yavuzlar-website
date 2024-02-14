@@ -8,7 +8,7 @@ export default function Intro() {
       sx={{ mt: "200px", gap: "100px", alignItems: "center", height: "100%;" }}
     >
       <Grid container>
-        <Grid item md={7}>
+        <Grid item xs={12} md={7}>
           <Box
             sx={{
               textAlign: "center",
@@ -26,7 +26,7 @@ export default function Intro() {
               </Typography>
               <Typography variant="h3">için Beraber Çalışalım</Typography>
             </Stack>
-            <Typography sx={{ maxWidth: "60ch", mt: "75px" }}>
+            <Typography sx={{ maxWidth: "58ch", mt: "75px" }}>
               Yavuzlar Takımı, Siber Vatan projesi kapsamında kurulan ve web
               güvenliği odaklı çalışan bir siber güvenlik takımıdır. Misyonumuz,
               her bir takım üyesinin alanında yetkin hale gelmesini sağlamak ve
@@ -54,7 +54,7 @@ export default function Intro() {
             </Box>
           </Box>
         </Grid>
-        <Grid item md={4}>
+        <Grid item xs={12} md={5}>
           <Box id="introLogo">
             <Image
               alt="image"

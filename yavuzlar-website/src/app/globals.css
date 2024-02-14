@@ -251,31 +251,31 @@ background-repeat: no-repeat;
 } */
 
 
-#countCard{
+/* #countCard{
   margin-top: 100px;
   display: flex;
   border: 0.5px solid red;
   border-radius: 30px;
   padding: 30px;
   justify-content: space-between;
-}
+} */
 
 
-#one-count{
+/* #one-count{
   display: flex;
-}
+} */
 
-#one-count h1{
+/* #one-count h1{
   font-size: 80px;
   padding-left: 30px;
   margin-right: 50px;
-}
+} */
 
-#one-count p{
+/* #one-count p{
   align-items: center;
   justify-content: center;
   font-size: 30px;
-}
+} */
 
 /* END OF THE ABOUT PAGE CSS */
 
