@@ -1,9 +1,9 @@
 import Image from "next/image";
-import aboutLogo from "../../../public/aboutLogo.png";
+import introLogo from "../../../public/introLogo.png";
 import "../../app/globals.css";
-export default function About() {
+export default function Intro() {
   return (
-    <div className="aboutContainer">
+    <div className="introContainer">
       <div id="textContainer">
         <h1 className="title">SiberVatan için Beraber Çalışalım</h1>
         <p>
@@ -17,8 +17,8 @@ export default function About() {
           <button id="buttons">Hakkımızda</button>
         </div>
       </div>
-      <div id="aboutLogo">
-        <Image src={aboutLogo} width={600} heigth={552.24} />
+      <div id="introLogo">
+        <Image src={introLogo} width={600} heigth={552.24} />
       </div>
     </div>
   );

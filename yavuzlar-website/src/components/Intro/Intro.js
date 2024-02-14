@@ -1,0 +1,76 @@
+import Image from "next/image";
+import introLogo from "../../../public/introLogo.png";
+import "../../app/globals.css";
+import { Box, Typography, Button, Grid, Stack } from "@mui/material";
+export default function Intro() {
+  return (
+    <Box
+      sx={{ mt: "200px", gap: "100px", alignItems: "center", height: "100%;" }}
+    >
+      <Grid container>
+        <Grid item md={7}>
+          <Box
+            sx={{
+              textAlign: "center",
+              flex: "1",
+              alignItems: "center",
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              mt: "90px",
+            }}
+          >
+            <Stack direction={"row"} spacing={2}>
+              <Typography color={"green"} variant="h3">
+                SiberVatan
+              </Typography>
+              <Typography variant="h3">için Beraber Çalışalım</Typography>
+            </Stack>
+            <Typography sx={{ maxWidth: "60ch", mt: "75px" }}>
+              Yavuzlar Takımı, Siber Vatan projesi kapsamında kurulan ve web
+              güvenliği odaklı çalışan bir siber güvenlik takımıdır. Misyonumuz,
+              her bir takım üyesinin alanında yetkin hale gelmesini sağlamak ve
+              ülkemizin siber güvenlik sektöründeki yerli proje sayısını
+              arttırmak amacıyla çeşitli projeler yürütmektir.
+            </Typography>
+            <Box>
+              <Button
+                sx={{
+                  mt: "30px",
+                  fontWeight: "600",
+                  padding: "15px",
+                  cursor: "pointer",
+                  borderRadius: "15px",
+                  width: "330px",
+                  height: "55px",
+                  backgroundColor: "transparent",
+                  background: "rgba(255,255,255,0.1)",
+                  backdropFilter: "blur(10px)",
+                  color: "green",
+                }}
+              >
+                Hakkımızda
+              </Button>
+            </Box>
+          </Box>
+        </Grid>
+        <Grid item md={4}>
+          <Box id="introLogo">
+            <Image
+              alt="image"
+              src={introLogo}
+              style={{
+                height: "500px",
+                width: "auto",
+                mt: "0px",
+                position: "relative",
+              }}
+              width={600}
+              heigth={552.24}
+            />
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}

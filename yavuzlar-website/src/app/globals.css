@@ -24,11 +24,25 @@ body {
     rgba(115, 205, 7, 1) 100%,
     rgba(10, 37, 134, 1) 80%,
     rgba(0, 35, 159, 1) 100%); */
+  /* background-color: #000818; 
+  background: linear-gradient(to right, 
+      rgba(255, 255, 255, 1) 0%, 
+      rgba(0, 182, 51, 1) 20%, 
+      rgba(115, 205, 7, 1) 40%, 
+      rgba(10, 37, 134, 0.8) 60%, 
+      rgba(0, 35, 159, 1) 100% 
+  ); */
+  /* width: 100%;
+  height: 100vh; */
+    /* ------------------------------------------- */
   background-color: var(--bg);
   color: var(--text);
   font-family: 'Poppins', sans-serif;
   font-weight: 500; /* Medium weight */
   font-size: 18px;
+  /* background-image: url(/securityImg.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title {
@@ -45,8 +59,7 @@ a {
   color: inherit;
 }
 
-.container{
-  /* background-color:blue; */
+/* .container{
 width: 1536px;
 margin: auto;
 padding-left: 50px;
@@ -55,9 +68,9 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-}
+} */
 
-@media(max-width: 1536px){
+/* @media(max-width: 1536px){
   .container{
     width: 1366px;
   }
@@ -93,13 +106,14 @@ justify-content: space-between;
   .container{
     width: 640px;
   }
-}
+} */
 
 header{
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: red;
 }
 /* #headerLogo{
 
@@ -151,25 +165,38 @@ display: none;
 /* END OF THE NAVBAR CSS */
 
 
-/* ABOUT PAGE CSS */
+/* INTRO PAGE CSS */
 
-.aboutContainer{
+/* .introContainer{
+margin-top: 200px;
 display: flex;
 gap: 100px;
-}
+align-items: center;
+height: 100%;
+} */
 
 
-#textContainer{
+/* #textContainer{
+  text-align: center;
   flex: 1;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* #textContainer h1{
+margin-bottom: 30px;
 }
+#textContainer p{
+max-width: 60ch;
+} */
 
 
-#aboutLogo{
-  width: 500px;
-  height: 50px;
-  position: relative;
-}
-#buttons{
+/* END OF THE INTRO PAGE CSS */
+
+/* #buttons{
+  margin-top: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -179,6 +206,93 @@ gap: 100px;
   border-radius: 15px;
   width: 330px;
   height: 55px;
-  /* backdrop-filter: blur(10px); */
+} */
 
+/* #cards{
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+} */
+
+
+/* #one-card{
+margin-left: 10px;
+padding: 30px ;
+border: 2px solid #8AE819;  
+border-radius: 30px;
+text-align: center;
+align-items: center;
+justify-content: center;
+} */
+
+#one-card h1{
+  margin-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
+
+
+/* ABOUT PAGE CSS */
+
+#about{
+background-image: url(/securityImg.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* #about{
+  gap: 20px;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+} */
+
+
+#countCard{
+  margin-top: 100px;
+  display: flex;
+  border: 0.5px solid red;
+  border-radius: 30px;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+
+#one-count{
+  display: flex;
+}
+
+#one-count h1{
+  font-size: 80px;
+  padding-left: 30px;
+  margin-right: 50px;
+}
+
+#one-count p{
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* END OF THE ABOUT PAGE CSS */
+
+
+/* CONTACT PAGE CSS */
+/* #contact{
+text-align: center;
+margin-top: 100px;
+} */
+
+/* #formDiv{
+  display: inline-block;
+  text-align: center;
+} */
+
+/* #submitButton, #ePosta, #subject, #message{} */
+
+
+/* END OF THE CONTACT PAGE CSS */
+

@@ -1,25 +1,50 @@
 import Image from "next/image";
-import aboutLogo from "../../../public/aboutLogo.png";
-import "../../app/globals.css";
+import securityImg from "../../../public/securityImg.svg";
+import countImg from "../../../public/countImg.svg";
+import Count from "./countComp/countComp";
+import { Box, Typography, Stack } from "@mui/material";
+
 export default function About() {
   return (
-    <div className="aboutContainer">
-      <div id="textContainer">
-        <h1 className="title">SiberVatan için Beraber Çalışalım</h1>
-        <p>
-          Yavuzlar Takımı, Siber Vatan projesi kapsamında kurulan ve web
-          güvenliği odaklı çalışan bir siber güvenlik takımıdır. Misyonumuz, her
-          bir takım üyesinin alanında yetkin hale gelmesini sağlamak ve
-          ülkemizin siber güvenlik sektöründeki yerli proje sayısını arttırmak
-          amacıyla çeşitli projeler yürütmektir.
-        </p>
-        <div>
-          <button id="buttons">Hakkımızda</button>
-        </div>
-      </div>
-      <div id="aboutLogo">
-        <Image src={aboutLogo} width={600} heigth={552.24} />
-      </div>
-    </div>
+    <Box
+      id="about"
+      sx={{
+        gap: "20px",
+        mt: "200px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        flexDirection: "column",
+      }}
+    >
+      <Typography variant="h2">Hakkımızda</Typography>
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        <Typography sx={{ maxWidth: "80ch" }}>
+          Yavuzlar; Siber Vatan projesi altında kurulan, web güvenliği, web
+          geliştirme ve siber istihbarat alanlarında çalışan ve projeler üreten
+          bir siber güvenlik takımıdır.
+        </Typography>
+        <Typography
+          sx={{
+            maxWidth: "90ch",
+          }}
+        >
+          Ülkemizde web güvenliği alanında ihtiyaç duyulan yetişmiş uzman
+          ihtiyacının karşılanmasına katkı sağlamak amacıyla Web Güvenliği
+          Uzmanı yetiştirmeyi ilke edinmiştir. Takım üyelerini geliştirmek ve
+          ülkemizin siber güvenlik sektöründeki yerli ürün yelpazesini
+          geliştirmek amacıyla çeşitli projeler yürütülmektedir.
+        </Typography>
+      </Stack>
+      <Count />
+    </Box>
   );
 }
