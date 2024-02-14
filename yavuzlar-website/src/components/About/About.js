@@ -18,10 +18,13 @@ export default function About() {
         flexDirection: "column",
       }}
     >
-      <Typography variant="h2">Hakkımızda</Typography>
+      <Typography sx={{ color: "green" }} variant="h2">
+        Hakkımızda
+      </Typography>
       <Stack
         spacing={2}
         sx={{
+          mt: "30px",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",

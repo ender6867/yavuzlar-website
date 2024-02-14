@@ -2,9 +2,19 @@ import * as React from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 
 export default function Contact() {
+  const [email, setEmail] = React.useState();
+  const [subject, setSubject] = React.useState();
+  const [message, setMessage] = React.useState();
+  const [isEmailInputFocused, setIsEmailInputFocused] = React.useState(false);
+  const [isSubjectInputFocused, setIsSubjectInputFocused] =
+    React.useState(false);
+  const [isMessageInputFocused, setIsMessageInputFocused] =
+    React.useState(false);
   return (
     <Box sx={{ textAlign: "center", mt: "100px", height: "552px" }}>
-      <Typography sx={{ fontSize: "2rem" }}>İLETİŞİM</Typography>
+      <Typography sx={{ fontSize: "2rem", color: "green" }}>
+        İLETİŞİM
+      </Typography>
       <Box
         sx={{
           textAlign: "center",
@@ -17,7 +27,7 @@ export default function Contact() {
           px: "138px",
         }}
       >
-        <Typography sx={{ mt: "30px", fontSize: "18x" }}>
+        <Typography sx={{ mt: "30px", fontSize: "18x", color: "green" }}>
           Bilgilerinizi bırakın, en kısa sürede sizinle iletişime geçeceğiz.
         </Typography>
         <Box
@@ -29,27 +39,105 @@ export default function Contact() {
           }}
         >
           <Stack spacing={2}>
-            <TextField color="success" fullWidth label="e-Posta" id="ePosta" />
-            <TextField color="success" fullWidth label="Konu" id="subject" />
             <TextField
+              InputProps={{ style: { color: "white" } }}
+              InputLabelProps={{
+                style: {
+                  color: isEmailInputFocused || email ? "green" : "white",
+                },
+              }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "green",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "green",
+                  },
+                  "&.Mui-focused fieldset legend span": {
+                    borderColor: "green",
+                    color: "green",
+                  },
+                },
+              }}
+              color="success"
+              fullWidth
+              label="e-Posta"
+              autoComplete="off"
+              onChange={(e) => setEmail(e.target.value)}
+              onFocus={() => setIsEmailInputFocused(true)}
+              onBlur={() => setIsEmailInputFocused(false)}
+            />
+            <TextField
+              InputProps={{ style: { color: "white" } }}
+              InputLabelProps={{
+                style: {
+                  color: isSubjectInputFocused || subject ? "green" : "white",
+                },
+              }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "green",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "green",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "green",
+                  },
+                },
+              }}
+              color="success"
+              fullWidth
+              label="Konu"
+              autoComplete="off"
+              onChange={(e) => setSubject(e.target.value)}
+              onFocus={() => setIsSubjectInputFocused(true)}
+              onBlur={() => setIsSubjectInputFocused(false)}
+            />
+            <TextField
+              InputProps={{ style: { color: "white" } }}
+              InputLabelProps={{
+                style: {
+                  color: isMessageInputFocused || message ? "green" : "white",
+                },
+              }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "green",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "green",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "green",
+                  },
+                },
+              }}
               multiline
               rows={5}
               color="success"
               fullWidth
               label="Mesaj"
-              id="message"
+              autoComplete="off"
+              onChange={(e) => setMessage(e.target.value)}
+              onFocus={() => setIsMessageInputFocused(true)}
+              onBlur={() => setIsMessageInputFocused(false)}
             />
             <Button
               sx={{
                 backgroundColor: "transparent",
                 background: "rgba(255,255,255,0.1)",
                 backdropFilter: "blur(10px)",
+                color: "green",
+                borderRadius: "15px",
               }}
-              variant="contained"
               id="submitButton"
             >
               GÖNDER
-            </Button>{" "}
+            </Button>
           </Stack>
         </Box>
       </Box>

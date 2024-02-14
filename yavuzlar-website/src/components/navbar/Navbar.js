@@ -11,10 +11,13 @@ import { Select, Option } from "@mui/base";
 export default function Navbar() {
   const [value, setValue] = React.useState(1);
   return (
-    <Container maxWidth="xl">
-      <AppBar sx={{ background: "transparent" }}>
-        <Toolbar>
-          <Box sx={{ ml: "0px" }}>
+    <AppBar
+      position="static"
+      sx={{ background: "transparent", boxShadow: "none" }}
+    >
+      <Container maxWidth="xl">
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box>
             <IconButton color="inherit" aria-label="logo">
               <Image
                 alt="image"
@@ -30,7 +33,7 @@ export default function Navbar() {
               <Select
                 defaultValue={"Türkçe"}
                 value={value}
-                onChange={(newValue) => setValue(newValue)}
+                onChange={(_, newValue) => setValue(newValue)}
               >
                 <Option value={1}>Türkçe</Option>
                 <Option value={2}>İngilizce</Option>
@@ -38,8 +41,8 @@ export default function Navbar() {
             </Stack>
           </Box>
         </Toolbar>
-      </AppBar>
-    </Container>
+      </Container>
+    </AppBar>
   );
 }
 
