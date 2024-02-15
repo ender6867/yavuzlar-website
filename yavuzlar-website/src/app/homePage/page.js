@@ -3,6 +3,8 @@ import About from "@/components/About/About";
 import Intro from "@/components/Intro/Intro";
 import Cards from "@/components/Cards/Cards";
 import Contact from "@/components/Contact/Contact";
+import Projects from "@/components/Projects/Projects";
+import Articles from "@/components/Articles/Articles";
 
 export default function Homepage() {
   return (
@@ -15,6 +17,12 @@ export default function Homepage() {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <Projects />
+      </div>
+      <div>
+        <Articles />
       </div>
       <div>
         <Contact />

@@ -22,7 +22,7 @@ export default function Intro() {
           >
             <Stack direction={"row"} spacing={2}>
               <Typography color={"green"} variant="h3">
-                SiberVatan
+                Siber Vatan
               </Typography>
               <Typography variant="h3">için Beraber Çalışalım</Typography>
             </Stack>
