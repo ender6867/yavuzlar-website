@@ -14,7 +14,7 @@ export default function Projects() {
           textAlign: "center",
         }}
       >
-        <Typography color="green" variant="h3">
+        <Typography sx={{ color: "#73CD07", fontWeight: "bold" }} variant="h3">
           Projelerimiz
         </Typography>
         <Typography sx={{ maxWidth: "90ch" }}>

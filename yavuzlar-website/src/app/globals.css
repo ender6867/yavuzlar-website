@@ -3,7 +3,9 @@
   --bgSoft: #2d2b42;
   --text: #ffffff;
   --textSoft: #e5e5e5
-  --btn: #3673fd
+  --btnColor: #3673fd,
+  --btnSize: 18px,
+  --btnWeight: bold,
   --title: #73cd07;
 }
 *{

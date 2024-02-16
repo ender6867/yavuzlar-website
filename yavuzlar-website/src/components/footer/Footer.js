@@ -1,8 +1,14 @@
 "use client";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Animasyonlu olarak kaydırma
+  });
+};
 const socialMedias = [
   {
     name: "Linkedin",
@@ -61,7 +67,9 @@ export default function Footer() {
                   <Image src={social.logo} width={20} height={20} />
                 </Link>
               ))}
-              <Image src="/upLogo.png" width={40} height={40} />
+              <Button onClick={scrollToTop}>
+                <Image src="/upLogo.png" width={40} height={40} />
+              </Button>
             </Stack>
           </Box>
         </Stack>

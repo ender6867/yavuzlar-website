@@ -1,6 +1,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
+
 const articles = [
   {
     title: "Front-end Teknolojiler-1",
@@ -24,9 +25,12 @@ const articles = [
 
 export default function Articles() {
   return (
-    <Container>
-      <Box sx={{}}>
-        <Typography sx={{ color: "green", textAlign: "center" }} variant="h3">
+    <Container sx={{ mt: "85px" }}>
+      <Box>
+        <Typography
+          sx={{ color: "#73CD07", fontWeight: "bold", textAlign: "center" }}
+          variant="h3"
+        >
           Son Yazılarımız
         </Typography>
         <Box sx={{ mt: "30px" }}>
@@ -44,17 +48,39 @@ export default function Articles() {
                 }}
               >
                 <Stack direction="row" sx={{ justifyContent: "space-between" }}>
-                  <Image alt="logo" src={article.logo} width={55} height={50} />
-                  <Typography
+                  <Box
                     sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      flexDirection: "column",
+                      mt: "15px",
+                      ml: "30px",
                     }}
-                    variant="h5"
                   >
-                    {article.title}
-                  </Typography>
+                    <Stack
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
+                      direction="row"
+                      spacing={5}
+                    >
+                      <Image
+                        alt="logo"
+                        src={article.logo}
+                        width={55}
+                        height={50}
+                      />
+
+                      <Typography
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                        }}
+                        variant="h5"
+                      >
+                        {article.title}
+                      </Typography>
+                    </Stack>
+                  </Box>
                   <Image
                     alt="image"
                     src={article.image}

@@ -31,16 +31,15 @@ export default function Navbar() {
               <Button color="inherit">Anasayfa</Button>
               <Button color="inherit">Book</Button>
               <Image src="/trFlag.svg" width={50} height={50} />
-              <Button>
-                <Select
-                  defaultValue={"Türkçe"}
-                  value={value}
-                  onChange={(_, newValue) => setValue(newValue)}
-                >
-                  <Option value={1}>Türkçe</Option>
-                  <Option value={2}>İngilizce</Option>
-                </Select>
-              </Button>
+
+              <Select
+                defaultValue={"Türkçe"}
+                value={value}
+                onChange={(_, newValue) => setValue(newValue)}
+              >
+                <Option value={1}>Türkçe</Option>
+                <Option value={2}>İngilizce</Option>
+              </Select>
             </Stack>
           </Box>
         </Toolbar>

@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
+import { useState } from "react";
 
 const cards = [
   {
@@ -15,16 +16,22 @@ const cards = [
     title: "Yenilikçi Projeler",
   },
   {
-    imgPath: "/Group5.svg",
-    title: "Yenilikçi Projeler2",
+    imgPath: "/Group6.svg",
+    title: "Takım İçi Eğitimler",
   },
   {
-    imgPath: "/Group5.svg",
-    title: "Yenilikçi Projeler3",
+    imgPath: "/Group7.svg",
+    title: "Dikey Uzmanlaşma",
   },
 ];
 
 export default function Cards() {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <Box>
       <Grid container spacing={8}>
@@ -32,12 +39,18 @@ export default function Cards() {
           <Grid item xs={12} md={4} key={index}>
             <Card
               sx={{
-                mt: "50px",
+                mt: "250px",
                 backgroundColor: "transparent",
                 border: "2px solid #8AE819",
                 borderRadius: "30px",
                 alignItems: "center",
                 textAlign: "center",
+                position: "relative",
+                transformStyle: "preserve-3d",
+                transition: "transform 0.8s",
+                "&:hover": {
+                  transform: "rotateY(180deg)",
+                },
               }}
             >
               <CardContent
@@ -45,29 +58,35 @@ export default function Cards() {
                   py: "80px !important",
                 }}
               >
-                <Box
-                  sx={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    mb: "80px",
-                  }}
-                >
-                  <CardMedia
-                    sx={{
-                      width: "auto",
-                      height: "180px",
-                      maxHeight: "200px",
-                    }}
-                    component="img"
-                    // width="auto"
-                    // height="485"
-                    image={card.imgPath}
-                  />
-                </Box>
-                <Typography color="white" variant="h3">
-                  {card.title}
-                </Typography>
+                {!isFlipped ? (
+                  <>
+                    <Box
+                      sx={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        mb: "80px",
+                      }}
+                    >
+                      <CardMedia
+                        sx={{
+                          width: "auto",
+                          height: "180px",
+                          maxHeight: "200px",
+                        }}
+                        component="img"
+                        // width="auto"
+                        // height="485"
+                        image={card.imgPath}
+                      />
+                    </Box>
+                    <Typography color="white" variant="h3">
+                      {card.title}
+                    </Typography>
+                  </>
+                ) : (
+                  <Typography>ARKA</Typography>
+                )}
               </CardContent>
             </Card>
           </Grid>

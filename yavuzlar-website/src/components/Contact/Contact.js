@@ -12,7 +12,7 @@ export default function Contact() {
     React.useState(false);
   return (
     <Box sx={{ textAlign: "center", mt: "100px", height: "552px" }}>
-      <Typography sx={{ fontSize: "2rem", color: "green" }}>
+      <Typography variant="h3" sx={{ color: "#73CD07", fontWeight: "bold" }}>
         İLETİŞİM
       </Typography>
       <Box
@@ -133,6 +133,8 @@ export default function Contact() {
                 backdropFilter: "blur(10px)",
                 color: "green",
                 borderRadius: "15px",
+                fontSize: "18px",
+                fontWeight: "bold",
               }}
               id="submitButton"
             >
