@@ -4,18 +4,21 @@ import Image from "next/image";
 
 const articles = [
   {
+    id: "1",
     title: "Front-end Teknolojiler-1",
     path: "abcd-1",
     image: "/articlesImg.png",
     logo: "/yavuzlarHorse.png",
   },
   {
+    id: "2",
     title: "Front-end Teknolojileri-2",
     path: "abcd-2",
     image: "/articlesImg.png",
     logo: "/yavuzlarHorse.png",
   },
   {
+    id: "3",
     title: "Front-end Teknolojiler-3",
     path: "abcd-3",
     image: "/articlesImg.png",
@@ -29,8 +32,8 @@ export default function Articles() {
       <Box>
         <Typography className="title">Son Yazılarımız</Typography>
         <Box sx={{ mt: "30px" }}>
-          {articles.map((article, index) => (
-            <Link href={article.path} key={index}>
+          {articles.map((article) => (
+            <Link href={article.path} key={article.id}>
               <Box
                 sx={{
                   mt: "30px",
@@ -63,7 +66,6 @@ export default function Articles() {
                         width={55}
                         height={50}
                       />
-
                       <Typography
                         sx={{
                           display: "flex",

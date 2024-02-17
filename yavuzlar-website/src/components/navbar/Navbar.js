@@ -2,13 +2,25 @@
 import * as React from "react";
 import Link from "next/link";
 import headerLogo from "../../../public/headerLogo.png";
-import Links from "./links/Links";
+// import Links from "./links/Links";
 import "@/app/globals.css";
 import Image from "next/image";
 import { Box, Button, Container } from "@mui/material";
 import { AppBar, Toolbar, IconButton, Typography, Stack } from "@mui/material";
 import { Select, Option } from "@mui/base";
 export default function Navbar() {
+  const navTabs = [
+    {
+      id: "1",
+      title: "Anasayfa",
+      path: "/",
+    },
+    {
+      id: "2",
+      title: "Book",
+      path: "https://book.siberyavuzlar.com/",
+    },
+  ];
   const [value, setValue] = React.useState(1);
   return (
     <AppBar
@@ -28,8 +40,11 @@ export default function Navbar() {
           </Box>
           <Box justifyContent="space-between">
             <Stack direction="row" spacing={2}>
-              <Button color="inherit">Anasayfa</Button>
-              <Button color="inherit">Book</Button>
+              {navTabs.map((navTab) => (
+                <Link sx={{}} href={navTab.path} textDecoration="none">
+                  {navTab.title}
+                </Link>
+              ))}
               <Image src="/trFlag.svg" width={50} height={50} />
 
               <Select

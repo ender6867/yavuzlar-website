@@ -11,6 +11,9 @@ import {
   Grid,
   Container,
   Divider,
+  MobileStepper,
+  useTheme,
+  Button,
 } from "@mui/material";
 
 const projects = [
@@ -44,6 +47,20 @@ export default function OurProjects() {
     setSelectedId(id);
   };
 
+  // MOBILE STEPPER
+  const theme = useTheme();
+
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  // END OF THE MOBILE STEPPER
   return (
     <Container
       sx={{
@@ -76,10 +93,10 @@ export default function OurProjects() {
                   backdropFilter: "blur(10px)",
 
                   border: project.id === selectedId ? "1px solid green" : "",
-                  transform: `${
-                    selectedId === project.id ? "scale(1.1)" : "scale(1)"
-                  }`,
-                  transition: "transform 1s ease-in-out",
+                  // transform: `${
+                  //   selectedId === project.id ? "scale(1.1)" : "scale(1)"
+                  // }`,
+                  // transition: "transform 1s ease-in-out",
                 }}
                 onClick={() => handleChangeId(project.id)}
               >
@@ -147,6 +164,40 @@ export default function OurProjects() {
             </Grid>
           ))}
         </Grid>
+      </Box>
+      <Box>
+        <MobileStepper
+          variant="dots"
+          steps={3}
+          color="green"
+          position="static"
+          activeStep={activeStep}
+          sx={{
+            maxWidth: "400",
+            flexGrow: "1",
+            backgroundColor: "transparent",
+            color: "green",
+            border: "1px solid green",
+          }}
+          nextButton={
+            <Button
+              size="small"
+              onClick={handleNext}
+              disabled={activeStep === 2}
+            >
+              Next
+            </Button>
+          }
+          backButton={
+            <Button
+              size="small"
+              onClick={handleBack}
+              disabled={activeStep === 0}
+            >
+              Back
+            </Button>
+          }
+        />
       </Box>
     </Container>
   );
