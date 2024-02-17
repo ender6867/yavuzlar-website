@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box, Typography, Container, Stack } from "@mui/material";
 import OurProjects from "./ourProjects/ourProjects";
+import "../../app/globals.css";
 
 export default function Projects() {
   return (
@@ -14,9 +15,7 @@ export default function Projects() {
           textAlign: "center",
         }}
       >
-        <Typography sx={{ color: "#73CD07", fontWeight: "bold" }} variant="h3">
-          Projelerimiz
-        </Typography>
+        <Typography className="animatedTitle">Projelerimiz</Typography>
         <Typography sx={{ maxWidth: "90ch" }}>
           Projelerimizi oluştururken, ülkemizin siber güvenlik alanındaki
           istihdamına katkı sağlamak ve farkındalık oluşturmayı hedefliyoruz.

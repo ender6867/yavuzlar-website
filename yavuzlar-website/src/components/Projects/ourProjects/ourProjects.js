@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import "../../../app/globals.css";
 import {
   Box,
   Card,
@@ -73,8 +74,12 @@ export default function OurProjects() {
                   backgroundColor: "transparent",
                   background: "rgba(255,255,255,0.1)",
                   backdropFilter: "blur(10px)",
+
                   border: project.id === selectedId ? "1px solid green" : "",
-                  zIndex: project.id === selectedId ? "100" : "-100",
+                  transform: `${
+                    selectedId === project.id ? "scale(1.1)" : "scale(1)"
+                  }`,
+                  transition: "transform 1s ease-in-out",
                 }}
                 onClick={() => handleChangeId(project.id)}
               >
@@ -121,13 +126,11 @@ export default function OurProjects() {
                   /> */}
                   <Box>
                     <Typography
+                      className="animatedTitle"
                       sx={{
                         mt: "20px",
-                        color: "#73CD07",
-                        fontWeight: "bold",
                         textAlign: "center",
                       }}
-                      variant="h5"
                     >
                       {project.title}
                     </Typography>

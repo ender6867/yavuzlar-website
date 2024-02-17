@@ -45,19 +45,16 @@ export default function Intro() {
             </Typography>
             <Box>
               <Button
+                className="button"
                 sx={{
                   mt: "30px",
-                  fontSize: "18px",
-                  fontWeight: "bold",
                   padding: "15px",
-                  cursor: "pointer",
                   borderRadius: "15px",
                   width: "330px",
                   height: "55px",
                   backgroundColor: "transparent",
                   background: "rgba(255,255,255,0.1)",
                   backdropFilter: "blur(10px)",
-                  color: "green",
                 }}
               >
                 Hakkımızda

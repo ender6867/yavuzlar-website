@@ -34,7 +34,7 @@ export default function About() {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        id="about"
+        className="about"
         sx={{
           gap: "20px",
           mt: "200px",
@@ -45,9 +45,7 @@ export default function About() {
           flexDirection: "column",
         }}
       >
-        <Typography sx={{ color: "#73CD07", fontWeight: "bold" }} variant="h2">
-          Hakkımızda
-        </Typography>
+        <Typography className="title">Hakkımızda</Typography>
         <Stack
           spacing={2}
           sx={{

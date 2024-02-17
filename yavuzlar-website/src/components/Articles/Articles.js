@@ -27,12 +27,7 @@ export default function Articles() {
   return (
     <Container sx={{ mt: "85px" }}>
       <Box>
-        <Typography
-          sx={{ color: "#73CD07", fontWeight: "bold", textAlign: "center" }}
-          variant="h3"
-        >
-          Son Yazılarımız
-        </Typography>
+        <Typography className="title">Son Yazılarımız</Typography>
         <Box sx={{ mt: "30px" }}>
           {articles.map((article, index) => (
             <Link href={article.path} key={index}>

@@ -12,9 +12,7 @@ export default function Contact() {
     React.useState(false);
   return (
     <Box sx={{ textAlign: "center", mt: "100px", height: "552px" }}>
-      <Typography variant="h3" sx={{ color: "#73CD07", fontWeight: "bold" }}>
-        İLETİŞİM
-      </Typography>
+      <Typography className="title">İLETİŞİM</Typography>
       <Box
         sx={{
           textAlign: "center",

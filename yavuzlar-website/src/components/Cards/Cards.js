@@ -47,7 +47,7 @@ export default function Cards() {
                 textAlign: "center",
                 position: "relative",
                 transformStyle: "preserve-3d",
-                transition: "transform 0.8s",
+                transition: "transform 1s",
                 "&:hover": {
                   transform: "rotateY(180deg)",
                 },
@@ -85,7 +85,19 @@ export default function Cards() {
                     </Typography>
                   </>
                 ) : (
-                  <Typography>ARKA</Typography>
+                  <>
+                    <Box
+                      sx={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        mb: "80px",
+                        transform: "rotateY(180deg)",
+                      }}
+                    >
+                      <Typography>ARKA</Typography>
+                    </Box>
+                  </>
                 )}
               </CardContent>
             </Card>
