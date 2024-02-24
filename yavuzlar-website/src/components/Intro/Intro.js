@@ -32,7 +32,7 @@ export default function Intro() {
                 }}
               >
                 Siber Vatan
-              </span>{" "}
+              </span>
               için Beraber Çalışalım
             </Typography>
 
@@ -63,7 +63,7 @@ export default function Intro() {
           </Box>
         </Grid>
         <Grid item xs={12} sm={4} md={5}>
-          <Box id="introLogo">
+          <Box id="introLogo" sx={{ display: { xs: "none", md: "flex" } }}>
             <Image
               alt="image"
               src={introLogo}

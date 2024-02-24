@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 
 const countInfo = [
   {
@@ -26,55 +26,63 @@ const countInfo = [
 
 export default function Count() {
   return (
-    <Box
-      sx={{
-        mt: "100px",
-        display: "flex",
-        borderRadius: "30px",
-        padding: "30px",
-        justifyContent: "space-between",
-        backgroundColor: "transparent",
-        background: "rgba(255,255,255,0.1)",
-        backdropFilter: "blur(10px)",
-      }}
-    >
-      {countInfo.map((count, index) => (
-        <Box
-          sx={{
-            display: "flex",
-            px: "50px",
-          }}
-          key={index}
-        >
-          <Typography
-            sx={{
-              fontSize: "80px",
-              mr: "50px",
-            }}
-            variant="h1"
-          >
-            {count.number}
-          </Typography>
-          <Box
-            sx={
-              {
-                // mx: "50px",
-              }
-            }
-          >
-            <Image src={count.image} alt="image" width={75} height={75} />
-            <Typography
-              sx={{
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "30px",
-              }}
-            >
-              {count.name}
-            </Typography>
-          </Box>
-        </Box>
-      ))}
-    </Box>
+    <Grid container>
+      <Grid
+        item
+        sx={{
+          mt: "100px",
+          display: "flex",
+          borderRadius: "30px",
+          padding: "30px",
+          justifyContent: "space-between",
+          backgroundColor: "transparent",
+          background: "rgba(255,255,255,0.1)",
+          backdropFilter: "blur(10px)",
+        }}
+        xs={12}
+      >
+        <Grid container>
+          {countInfo.map((count, index) => (
+            <Grid item key={index} xs={12} md={3}>
+              <Box
+                sx={{
+                  display: "flex",
+                  px: "50px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "80px",
+                    mr: "50px",
+                  }}
+                  variant="h1"
+                >
+                  {count.number}
+                </Typography>
+
+                <Box
+                  sx={
+                    {
+                      // mx: "50px",
+                    }
+                  }
+                >
+                  <Image src={count.image} alt="image" width={75} height={75} />
+                  <Typography
+                    sx={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "30px",
+                    }}
+                  >
+                    {count.name}
+                  </Typography>
+                </Box>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Box, Typography, Container, Stack } from "@mui/material";
 import OurProjects from "./ourProjects/ourProjects";
 import "../../app/globals.css";
+import DenemeP from "./ourProjects/Deneme";
 
 export default function Projects() {
   return (
@@ -23,8 +24,13 @@ export default function Projects() {
           dış tehditlere karşı arttırmayı amaçlıyoruz.
         </Typography>
       </Stack>
-      <Box sx={{ mb: "40px" }}>
-        <OurProjects />
+      <Box
+        sx={{
+          mb: "40px",
+        }}
+      >
+        {/* <OurProjects /> */}
+        <DenemeP />
       </Box>
     </Box>
   );

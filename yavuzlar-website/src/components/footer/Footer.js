@@ -1,5 +1,5 @@
 "use client";
-import { Box, Container, Stack, Typography, Button } from "@mui/material";
+import { Box, Container, Stack, Typography, Button, Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,39 +44,59 @@ const socialMedias = [
 
 export default function Footer() {
   return (
-    <Container sx={{ mt: "80px", mb: "50px" }} maxWidth="xl">
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Image src="/yavuzlarFooterImage.png" width={350} height={75} />
-      </Box>
-      <Box
-        sx={{
-          mt: "150px",
-        }}
-      >
-        <Stack sx={{ justifyContent: "space-between" }} direction="row">
-          <Typography variant="h6">
-            © Copyrights 2021 Yavuzlar Web Takımı
-          </Typography>
-          <Box>
+    <Container>
+      <Grid container sx={{ mt: "80px", mb: "50px" }}>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Image src="/yavuzlarFooterImage.png" width={350} height={75} />
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            mt: "150px",
+          }}
+        >
+          <Stack direction="row" justifyContent="space-between">
+            <Typography variant="h6">
+              © Copyrights 2021 Yavuzlar Web Takımı
+            </Typography>
             <Stack direction="row" spacing={3}>
               {socialMedias.map((social) => (
                 <Link href={social.link} key={social.id}>
                   <Image src={social.logo} width={20} height={20} />
                 </Link>
               ))}
-              <Button onClick={scrollToTop}>
+              {/* <Button onClick={scrollToTop}>
                 <Image src="/upLogo.png" width={40} height={40} />
-              </Button>
+              </Button> */}
             </Stack>
-          </Box>
-        </Stack>
-      </Box>
+          </Stack>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
+
+// <Stack sx={{ justifyContent: "space-between" }} direction="row">
+//   <Typography variant="h6">
+//     © Copyrights 2021 Yavuzlar Web Takımı
+//   </Typography>
+//   <Box>
+//     <Stack direction="row" spacing={3}>
+//       {socialMedias.map((social) => (
+//         <Link href={social.link} key={social.id}>
+//           <Image src={social.logo} width={20} height={20} />
+//         </Link>
+//       ))}
+//       <Button onClick={scrollToTop}>
+//         <Image src="/upLogo.png" width={40} height={40} />
+//       </Button>
+//     </Stack>

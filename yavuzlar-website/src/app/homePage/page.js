@@ -5,6 +5,7 @@ import Cards from "@/components/Cards/Cards";
 import Contact from "@/components/Contact/Contact";
 import Projects from "@/components/Projects/Projects";
 import Articles from "@/components/Articles/Articles";
+import Card2 from "@/components/Cards/Card2";
 
 export default function Homepage() {
   return (
@@ -14,7 +15,9 @@ export default function Homepage() {
       </div>
       <div>
         <Cards />
+        {/* <Card2 /> */}
       </div>
+
       <div>
         <About />
       </div>

@@ -1,18 +1,8 @@
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { Container } from "@mui/material";
-
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: colors.orange[500],
-//     },
-//     secondary: {
-//       main: "#73CD07",
-//     },
-//   },
-// });
+import ThemeComponent from "@/components/layout/themeComponent";
+import Navbar from "@/components/navbar/Navbar";
 
 export const metadata = {
   title: "Siber Yavuzlar",
@@ -23,11 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <ThemeProvider theme={theme}> */}
-        <Navbar />
-        <Container maxWidth="xl">{children}</Container>
-        <Footer />
-        {/* </ThemeProvider> */}
+        <ThemeComponent>
+          <Navbar />
+          <Container maxWidth="xl">{children}</Container>
+          <Footer />
+        </ThemeComponent>
       </body>
     </html>
   );

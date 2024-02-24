@@ -1,5 +1,15 @@
 import * as React from "react";
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Stack,
+  TextField,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  Container,
+} from "@mui/material";
 
 export default function Contact() {
   const [email, setEmail] = React.useState();
@@ -11,136 +21,150 @@ export default function Contact() {
   const [isMessageInputFocused, setIsMessageInputFocused] =
     React.useState(false);
   return (
-    <Box sx={{ textAlign: "center", mt: "100px", height: "552px" }}>
+    <Box sx={{ mt: "100px" }}>
       <Typography className="title">İLETİŞİM</Typography>
-      <Box
+      <Card
         sx={{
           textAlign: "center",
-          display: "inline-block",
           backgroundColor: "transparent",
           background: "rgba(255,255,255,0.1)",
           backdropFilter: "blur(10px)",
           mt: "30px",
           borderRadius: "30px",
-          px: "138px",
         }}
       >
-        <Typography sx={{ mt: "30px", fontSize: "18x", color: "green" }}>
-          Bilgilerinizi bırakın, en kısa sürede sizinle iletişime geçeceğiz.
-        </Typography>
-        <Box
-          sx={{
-            mt: "30px",
-            width: 963,
-            maxWidth: "100%",
-            mb: "30px",
-          }}
-        >
-          <Stack spacing={2}>
-            <TextField
-              InputProps={{ style: { color: "white" } }}
-              InputLabelProps={{
-                style: {
-                  color: isEmailInputFocused || email ? "green" : "white",
-                },
-              }}
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "green",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "green",
-                  },
-                  "&.Mui-focused fieldset legend span": {
-                    borderColor: "green",
-                    color: "green",
-                  },
-                },
-              }}
-              color="success"
-              fullWidth
-              label="e-Posta"
-              autoComplete="off"
-              onChange={(e) => setEmail(e.target.value)}
-              onFocus={() => setIsEmailInputFocused(true)}
-              onBlur={() => setIsEmailInputFocused(false)}
-            />
-            <TextField
-              InputProps={{ style: { color: "white" } }}
-              InputLabelProps={{
-                style: {
-                  color: isSubjectInputFocused || subject ? "green" : "white",
-                },
-              }}
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "green",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "green",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "green",
-                  },
-                },
-              }}
-              color="success"
-              fullWidth
-              label="Konu"
-              autoComplete="off"
-              onChange={(e) => setSubject(e.target.value)}
-              onFocus={() => setIsSubjectInputFocused(true)}
-              onBlur={() => setIsSubjectInputFocused(false)}
-            />
-            <TextField
-              InputProps={{ style: { color: "white" } }}
-              InputLabelProps={{
-                style: {
-                  color: isMessageInputFocused || message ? "green" : "white",
-                },
-              }}
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "green",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "green",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "green",
-                  },
-                },
-              }}
-              multiline
-              rows={5}
-              color="success"
-              fullWidth
-              label="Mesaj"
-              autoComplete="off"
-              onChange={(e) => setMessage(e.target.value)}
-              onFocus={() => setIsMessageInputFocused(true)}
-              onBlur={() => setIsMessageInputFocused(false)}
-            />
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                background: "rgba(255,255,255,0.1)",
-                backdropFilter: "blur(10px)",
-                color: "green",
-                borderRadius: "15px",
-                fontSize: "18px",
-                fontWeight: "bold",
-              }}
-              id="submitButton"
+        <CardContent sx={{ p: "4rem 0rem !important" }}>
+          <Container>
+            <Grid
+              // sx={{ textAlign: "center", mt: "100px", height: "552px" }}
+              container
+              spacing={4}
             >
-              GÖNDER
-            </Button>
-          </Stack>
-        </Box>
-      </Box>
+              <Grid item xs={12}>
+                <Typography
+                  sx={{ mt: "30px", fontSize: "18x", color: "green" }}
+                >
+                  Bilgilerinizi bırakın, en kısa sürede sizinle iletişime
+                  geçeceğiz.
+                </Typography>
+              </Grid>
+
+              <Grid item xs={12}>
+                <TextField
+                  InputProps={{ style: { color: "white" } }}
+                  sx={{
+                    "& .MuiFormLabel-root": {
+                      color: "white",
+                      zIndex: 99,
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "#73CD07",
+                        borderRadius: "30px",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "#73CD07",
+                      },
+                      "&.Mui-focused fieldset legend span": {
+                        borderColor: "#73Cd07",
+                        color: "#73CD07",
+                      },
+                    },
+                  }}
+                  color="success"
+                  fullWidth
+                  label="e-Posta"
+                  autoComplete="off"
+                  onChange={(e) => setEmail(e.target.value)}
+                  onFocus={() => setIsEmailInputFocused(true)}
+                  onBlur={() => setIsEmailInputFocused(false)}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  InputProps={{ style: { color: "white" } }}
+                  sx={{
+                    "& .MuiFormLabel-root": {
+                      color: "white",
+                      zIndex: 99,
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "#73CD07",
+                        borderRadius: "30px",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "#73CD07",
+                      },
+                      "&.Mui-focused fieldset legend span": {
+                        borderColor: "#73Cd07",
+                        color: "#73CD07",
+                      },
+                    },
+                  }}
+                  color="success"
+                  fullWidth
+                  label="Konu"
+                  autoComplete="off"
+                  onChange={(e) => setSubject(e.target.value)}
+                  onFocus={() => setIsSubjectInputFocused(true)}
+                  onBlur={() => setIsSubjectInputFocused(false)}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  InputProps={{ style: { color: "white" } }}
+                  sx={{
+                    "& .MuiFormLabel-root": {
+                      color: "white",
+                      zIndex: 99,
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "#73CD07",
+                        borderRadius: "30px",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "#73CD07",
+                      },
+                      "&.Mui-focused fieldset legend span": {
+                        borderColor: "#73Cd07",
+                        color: "#73CD07",
+                      },
+                    },
+                  }}
+                  multiline
+                  rows={5}
+                  color="success"
+                  fullWidth
+                  label="Mesaj"
+                  autoComplete="off"
+                  onChange={(e) => setMessage(e.target.value)}
+                  onFocus={() => setIsMessageInputFocused(true)}
+                  onBlur={() => setIsMessageInputFocused(false)}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                  fullWidth
+                  sx={{
+                    backgroundColor: "transparent",
+                    background: "rgba(255,255,255,0.1)",
+                    backdropFilter: "blur(10px)",
+                    color: "green",
+                    borderRadius: "15px",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                  }}
+                  id="submitButton"
+                >
+                  GÖNDER
+                </Button>
+              </Grid>
+            </Grid>
+          </Container>
+        </CardContent>
+      </Card>
     </Box>
   );
 
