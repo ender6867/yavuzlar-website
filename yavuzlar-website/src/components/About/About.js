@@ -1,6 +1,6 @@
 import Image from "next/image";
-import securityImg from "../../../public/securityImg.svg";
-import countImg from "../../../public/countImg.svg";
+import securityImg from "../../../public/security-shield.png";
+// import countImg from "../../../public/countImg.svg";
 import Count from "./countComp/countComp";
 import { Box, Typography, Stack, Grid } from "@mui/material";
 // import { makeStyles } from "@mui/material/styles";
@@ -45,7 +45,7 @@ export default function About() {
           flexDirection: "column",
         }}
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12}>
           <Typography className="title">Hakkımızda</Typography>
           <Stack
             spacing={2}

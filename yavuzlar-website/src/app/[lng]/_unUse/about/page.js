@@ -1,6 +1,6 @@
 import Image from "next/image";
 import introLogo from "../../../public/introLogo.png";
-import "../../app/globals.css";
+// import "../../app/globals.css";
 export default function Intro() {
   return (
     <div className="introContainer">
@@ -18,7 +18,7 @@ export default function Intro() {
         </div>
       </div>
       <div id="introLogo">
-        <Image src={introLogo} width={600} heigth={552.24} />
+        <Image alt="image" src={introLogo} width={600} heigth={552.24} />
       </div>
     </div>
   );

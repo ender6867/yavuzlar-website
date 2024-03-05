@@ -1,7 +1,7 @@
 "use client";
 // import * as React from "react";
 // import Link from "next/link";
-// import headerLogo from "../../../public/headerLogo.png";
+// import navbarLogo from "../../../public/navbarLogo.png";
 // import menuButton from "../../../public/menuButton.svg";
 // import "@/app/globals.css";
 // import Image from "next/image";
@@ -63,7 +63,7 @@
 //                 <IconButton color="inherit" aria-label="logo">
 //                   <Image
 //                     alt="image"
-//                     src={headerLogo}
+//                     src={navbarLogo}
 //                     style={{ height: "62px", width: "auto" }}
 //                   />
 //                 </IconButton>
@@ -156,7 +156,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 import Image from "next/image";
 import Link from "next/link";
-import headerLogo from "../../../public/headerLogo.png";
+import navbarLogo from "../../../public/navbar-logo.png";
 import LanguageSelect from "./language/language";
 import { Menu as MenuIcon } from "@mui/icons-material";
 
@@ -186,18 +186,20 @@ export default function Navbar() {
   return (
     <AppBar
       position="static"
-      sx={{ background: "transparent", boxShadow: "none" }}
+      sx={{
+        background: "transparent",
+        boxShadow: "none",
+      }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{ mx: "auto" }}>
         <Toolbar
-          disableGutters
+          // disableGutters
           sx={{ display: "flex", justifyContent: "space-between" }}
         >
           <Link href="/">
             <Image
-              new
               alt="image"
-              src={headerLogo}
+              src={navbarLogo}
               style={{ height: "62px", width: "auto" }}
             />
           </Link>
@@ -243,9 +245,8 @@ export default function Navbar() {
           <Stack direction="row" alignItems="center" spacing={1}>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {navTabs.map((navTab) => (
-                <Link href={navTab.path}>
+                <Link href={navTab.path} key={navTab.id}>
                   <Button
-                    key={navTab.id}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: "white", display: "block" }}
                   >

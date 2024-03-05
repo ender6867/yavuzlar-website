@@ -1,6 +1,6 @@
 import Image from "next/image";
-import introLogo from "../../../public/introLogo.png";
-import "../../app/globals.css";
+import introLogo from "../../../public/intro-logo.png";
+// import "../../app/[lng]/globals.css";
 import { Box, Typography, Button, Grid, Stack } from "@mui/material";
 export default function Intro() {
   return (
@@ -33,6 +33,7 @@ export default function Intro() {
               >
                 Siber Vatan
               </span>
+              <span> </span>
               için Beraber Çalışalım
             </Typography>
 
@@ -62,8 +63,8 @@ export default function Intro() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={4} md={5}>
-          <Box id="introLogo" sx={{ display: { xs: "none", md: "flex" } }}>
+        <Grid item xs={12} sm={4} md={5} id="introLogo">
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Image
               alt="image"
               src={introLogo}

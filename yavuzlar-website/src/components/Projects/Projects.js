@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Box, Typography, Container, Stack } from "@mui/material";
-import OurProjects from "./ourProjects/ourProjects";
-import "../../app/globals.css";
-import DenemeP from "./ourProjects/Deneme";
+import OurProjects from "./ourProjects/OurProjects";
 
 export default function Projects() {
   return (
@@ -29,8 +27,7 @@ export default function Projects() {
           mb: "40px",
         }}
       >
-        {/* <OurProjects /> */}
-        <DenemeP />
+        <OurProjects />
       </Box>
     </Box>
   );

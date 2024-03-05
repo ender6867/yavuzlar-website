@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../../../app/globals.css";
+// import "@/global.css";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -31,56 +31,35 @@ const projects = [
     title: "VulnLab",
     description:
       "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
-    image: "/vulnlabImg.png",
+    image: "/vulnlab.png",
   },
   {
     id: "2",
     title: "BLADIA",
     description:
       "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
-    image: "/bladiaImg.png",
+    image: "/bladia.png",
   },
   {
     id: "3",
     title: "CTFGo",
     description:
       "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
-    image: "/ctfGoImg.png",
-  },
-  {
-    id: "1",
-    title: "VulnLab",
-    description:
-      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
-    image: "/vulnlabImg.png",
-  },
-  {
-    id: "2",
-    title: "BLADIA",
-    description:
-      "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
-    image: "/bladiaImg.png",
-  },
-  {
-    id: "3",
-    title: "CTFGo",
-    description:
-      "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
-    image: "/ctfGoImg.png",
+    image: "/ctfgo.png",
   },
 ];
 
-export default function DenemeP() {
+export default function OurProjects() {
   return (
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
-      loop={true}
-      slidesPerView={2}
+      // loop={true}
+      slidesPerView={2.05}
       coverflowEffect={{
         rotate: 0,
-        stretch: 25,
+        stretch: 20,
         depth: 100,
         modifier: 2,
         slideShadows: true,
@@ -96,6 +75,7 @@ export default function DenemeP() {
     >
       {projects.map((project) => (
         <SwiperSlide
+          key={project.id}
           style={{ width: "300px !important" }}
           className="swiper-slide"
         >
@@ -124,7 +104,11 @@ export default function DenemeP() {
                   height: "250px",
                 }}
               >
-                <CardMedia component="img" image={project.image} />
+                <CardMedia
+                  sx={{ borderRadius: "30px" }}
+                  component="img"
+                  image={project.image}
+                />
               </Box>
               <Box sx={{ mt: "50px", width: "500px" }}>
                 <Divider

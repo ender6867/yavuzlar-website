@@ -41,12 +41,16 @@ export default function Articles() {
 
         {articles.map((article) => (
           <Grid
+            key={article.id}
             item
             xs={12}
             md={10}
             sx={{
               mt: "30px",
-              border: "0.3px solid green",
+              "&:hover": {
+                // border: "2px solid #8AE819",
+                border: "0.3px solid green",
+              },
               borderRadius: "30px",
               height: "80px",
               backgroundColor: "transparent",
@@ -54,7 +58,7 @@ export default function Articles() {
               backdropFilter: "blur(10px)",
             }}
           >
-            <Link href={article.path} key={article.id}>
+            <Link href={article.path}>
               <Stack direction="row" sx={{ justifyContent: "space-between" }}>
                 <Box
                   sx={{

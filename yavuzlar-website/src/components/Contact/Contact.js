@@ -21,7 +21,12 @@ export default function Contact() {
   const [isMessageInputFocused, setIsMessageInputFocused] =
     React.useState(false);
   return (
-    <Box sx={{ mt: "100px" }}>
+    <Box
+      sx={{
+        mt: "100px",
+        px: "250px",
+      }}
+    >
       <Typography className="title">İLETİŞİM</Typography>
       <Card
         sx={{
@@ -36,9 +41,11 @@ export default function Contact() {
         <CardContent sx={{ p: "4rem 0rem !important" }}>
           <Container>
             <Grid
-              // sx={{ textAlign: "center", mt: "100px", height: "552px" }}
               container
               spacing={4}
+              sx={{
+                px: "90px",
+              }}
             >
               <Grid item xs={12}>
                 <Typography
@@ -144,17 +151,21 @@ export default function Contact() {
                   onBlur={() => setIsMessageInputFocused(false)}
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} sx={{ alignItems: "center", display: "flex" }}>
                 <Button
-                  fullWidth
                   sx={{
+                    px: "180px",
+                    display: "flex",
                     backgroundColor: "transparent",
                     background: "rgba(255,255,255,0.1)",
                     backdropFilter: "blur(10px)",
-                    color: "green",
+                    color: "#73CD07",
                     borderRadius: "15px",
                     fontSize: "18px",
                     fontWeight: "bold",
+                    "&:hover": {
+                      border: "1px solid #73CD07",
+                    },
                   }}
                   id="submitButton"
                 >

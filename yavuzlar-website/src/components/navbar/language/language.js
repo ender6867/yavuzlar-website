@@ -19,6 +19,7 @@ export default function LanguageSelect() {
           spacing={1}
         >
           <Image
+            alt="image"
             src={lang === "tr" ? "/trFlag.svg" : "/enFlag.svg"}
             width={50}
             height={50}

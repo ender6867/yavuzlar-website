@@ -55,7 +55,12 @@ export default function Footer() {
             justifyContent: "center",
           }}
         >
-          <Image src="/yavuzlarFooterImage.png" width={350} height={75} />
+          <Image
+            alt="image"
+            src="/yavuzlarFooterImage.png"
+            width={350}
+            height={75}
+          />
         </Grid>
         <Grid
           item
@@ -71,7 +76,7 @@ export default function Footer() {
             <Stack direction="row" spacing={3}>
               {socialMedias.map((social) => (
                 <Link href={social.link} key={social.id}>
-                  <Image src={social.logo} width={20} height={20} />
+                  <Image alt="image" src={social.logo} width={20} height={20} />
                 </Link>
               ))}
               {/* <Button onClick={scrollToTop}>
