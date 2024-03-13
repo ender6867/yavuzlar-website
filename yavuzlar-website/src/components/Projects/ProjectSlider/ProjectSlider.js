@@ -1,0 +1,193 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
+
+const projects = [
+  {
+    id: "1",
+    title: "VulnLab",
+    description:
+      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+    image: "/vulnlab.png",
+  },
+  {
+    id: "2",
+    title: "BLADIA",
+    description:
+      "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
+    image: "/bladia.png",
+  },
+  {
+    id: "3",
+    title: "CTFGo",
+    description:
+      "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
+    image: "/ctfgo.png",
+  },
+  {
+    id: "4",
+    title: "VulnLab",
+    description:
+      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+    image: "/vulnlab.png",
+  },
+  {
+    id: "5",
+    title: "BLADIA",
+    description:
+      "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
+    image: "/bladia.png",
+  },
+  {
+    id: "6",
+    title: "CTFGo",
+    description:
+      "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
+    image: "/ctfgo.png",
+  },
+];
+
+export default function OurProjects() {
+  return (
+    <Swiper
+      effect={"coverflow"}
+      grabCursor={true}
+      centeredSlides={true}
+      loop={true}
+      slidesPerView={2.05}
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 20,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      }}
+      pagination={{
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      }}
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        clickable: true,
+      }}
+      modules={[EffectCoverflow, Pagination, Navigation]}
+      className="swiper_container"
+    >
+      {projects.map((project) => (
+        <SwiperSlide
+          key={project.id}
+          style={{ width: "300px !important" }}
+          className="swiper-slide"
+        >
+          <Card
+            sx={{
+              width: "100%",
+              // maxWidth: "500px",
+              borderRadius: "30px",
+              backgroundColor: "transparent",
+              background: "rgba(255,255,255,0.1)",
+              backdropFilter: "blur(10px)",
+            }}
+          >
+            <CardContent
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box
+                sx={{
+                  mt: "60px",
+                  width: "250px",
+                  height: "250px",
+                }}
+              >
+                <CardMedia
+                  sx={{ borderRadius: "30px" }}
+                  component="img"
+                  image={project.image}
+                />
+              </Box>
+              <Box sx={{ mt: "50px", width: "500px" }}>
+                <Divider
+                  sx={{
+                    maxWidth: "500px",
+                  }}
+                  variant="fullWidth"
+                  textAlign="right"
+                >
+                  <Image
+                    src={"/gitHub.svg"}
+                    alt="image"
+                    height={60}
+                    width={60}
+                  />
+                </Divider>
+              </Box>
+              <Box>
+                <Typography
+                  className="title"
+                  sx={{
+                    mt: "20px",
+                    textAlign: "center",
+                  }}
+                >
+                  {project.title}
+                </Typography>
+                <Typography
+                  sx={{
+                    mt: "10px",
+                    textAlign: "center",
+                    maxWidth: "40ch",
+                  }}
+                  variant="body2"
+                  color="white"
+                >
+                  {project.description}
+                </Typography>
+              </Box>
+            </CardContent>
+          </Card>
+        </SwiperSlide>
+      ))}
+      <Box className="slider-controler">
+        <Box
+          sx={{ color: "#73CD07 !important" }}
+          className="swiper-button-prev slider-arrow"
+        />
+        <Box
+          sx={{ color: "#73CD07 !important" }}
+          className="swiper-button-next slider-arrow"
+        />
+        <Box className="swiper-pagination" />
+      </Box>
+    </Swiper>
+  );
+}

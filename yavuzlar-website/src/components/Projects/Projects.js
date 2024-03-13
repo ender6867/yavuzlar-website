@@ -1,34 +1,32 @@
-import * as React from "react";
-import { Box, Typography, Container, Stack } from "@mui/material";
-import OurProjects from "./ourProjects/OurProjects";
+import { Grid, Typography } from "@mui/material";
+import React from "react";
+import ProjectSlider from "./ProjectSlider/ProjectSlider";
 
-export default function Projects() {
+export const Projects = () => {
   return (
-    <Box>
-      <Stack
-        spacing={4}
+    <Grid container sx={{ mt: "190px" }}>
+      <Grid
+        item
+        xs={12}
         sx={{
-          mt: "80px",
+          display: "flex",
           alignItems: "center",
-          justifyContent: "center",
+          flexDirection: "column",
           textAlign: "center",
         }}
       >
-        <Typography className="animatedTitle">Projelerimiz</Typography>
-        <Typography sx={{ maxWidth: "90ch" }}>
+        <Typography className="title">Projelerimiz</Typography>
+        <Typography sx={{ mt: "30px", maxWidth: "90ch" }}>
           Projelerimizi oluştururken, ülkemizin siber güvenlik alanındaki
           istihdamına katkı sağlamak ve farkındalık oluşturmayı hedefliyoruz.
           Geliştirdiğimiz yazılımlar ile siber alanda milli güvenliğimizi, iç ve
           dış tehditlere karşı arttırmayı amaçlıyoruz.
         </Typography>
-      </Stack>
-      <Box
-        sx={{
-          mb: "40px",
-        }}
-      >
-        <OurProjects />
-      </Box>
-    </Box>
+      </Grid>
+      <Grid item xs={12} sx={{ mt: "190px" }}>
+        <ProjectSlider />
+      </Grid>
+    </Grid>
   );
-}
+};
+export default Projects;

@@ -1,17 +1,16 @@
-import * as React from "react";
+"use client";
 import {
-  Box,
   Button,
-  Stack,
-  TextField,
-  Typography,
-  Grid,
   Card,
   CardContent,
   Container,
+  Grid,
+  TextField,
+  Typography,
 } from "@mui/material";
+import React from "react";
 
-export default function Contact() {
+export const Contact = () => {
   const [email, setEmail] = React.useState();
   const [subject, setSubject] = React.useState();
   const [message, setMessage] = React.useState();
@@ -21,30 +20,35 @@ export default function Contact() {
   const [isMessageInputFocused, setIsMessageInputFocused] =
     React.useState(false);
   return (
-    <Box
+    <Grid
+      container
       sx={{
-        mt: "100px",
-        px: "250px",
+        mx: { xs: "0px", sm: "0px", md: "50px" },
+        mt: "190px",
+        display: "flex",
+        alignItems: "center",
       }}
     >
-      <Typography className="title">İLETİŞİM</Typography>
-      <Card
-        sx={{
-          textAlign: "center",
-          backgroundColor: "transparent",
-          background: "rgba(255,255,255,0.1)",
-          backdropFilter: "blur(10px)",
-          mt: "30px",
-          borderRadius: "30px",
-        }}
-      >
-        <CardContent sx={{ p: "4rem 0rem !important" }}>
-          <Container>
+      <Grid item xs={12}>
+        <Typography className="title">İletişim</Typography>
+      </Grid>
+      <Grid item xs={12} sx={{ px: { xs: "0px", sm: "0px", md: "200px" } }}>
+        <Card
+          sx={{
+            textAlign: "center",
+            backgroundColor: "transparent",
+            background: "rgba(255,255,255,0.1)",
+            backdropFilter: "blur(10px)",
+            mt: "30px",
+            borderRadius: "30px",
+          }}
+        >
+          <CardContent sx={{ p: "4rem 0rem !important" }}>
             <Grid
               container
               spacing={4}
               sx={{
-                px: "90px",
+                px: { xs: "20px", sm: "px", md: "200px" },
               }}
             >
               <Grid item xs={12}>
@@ -151,10 +155,11 @@ export default function Contact() {
                   onBlur={() => setIsMessageInputFocused(false)}
                 />
               </Grid>
-              <Grid item xs={12} sx={{ alignItems: "center", display: "flex" }}>
+              <Grid item xs={12}>
                 <Button
+                  fullWidth
                   sx={{
-                    px: "180px",
+                    // px: "180px",
                     display: "flex",
                     backgroundColor: "transparent",
                     background: "rgba(255,255,255,0.1)",
@@ -173,69 +178,10 @@ export default function Contact() {
                 </Button>
               </Grid>
             </Grid>
-          </Container>
-        </CardContent>
-      </Card>
-    </Box>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
   );
-
-  //   const [name, setName] = React.useState("");
-  //   const theme = createTheme({
-  //     palette: {
-  //       primary: {
-  //         main: purple[500],
-  //       },
-  //       secondary: {
-  //         main: "#73cd07",
-  //       },
-  //     },
-  //   });
-
-  //   return (
-  //     <div>
-  //       <Box
-  //         component="form"
-  //         sx={{
-  //           "& > :not(style)": { m: 1, width: "500" },
-  //         }}
-  //         noValidate
-  //         autoComplete="off"
-  //       >
-  //         <TextField
-  //           id="outlined-controlled"
-  //           label="E-Posta"
-  //           value={name}
-  //           onChange={(event) => {
-  //             setName(event.target.value);
-  //           }}
-  //           color="secondary"
-  //         />
-  //         <TextField
-  //           id="outlined-controlled"
-  //           label="Konu"
-  //           value={name}
-  //           onChange={(event) => {
-  //             setName(event.target.value);
-  //           }}
-  //         />
-  //       </Box>
-  //     </div>
-  //   );
-}
-
-// export default function Contact() {
-//   return (
-//     <Box
-//       component="form"
-//       sx={{
-//         "& > :not(style)": { m: 1, width: "25ch" },
-//       }}
-//       noValidate
-//       autoComplete="off"
-//     >
-//       <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-//       <TextField id="filled-basic" label="Filled" variant="filled" />
-//       <TextField id="standard-basic" label="Standard" variant="standard" />
-//     </Box>
-//   );
-// }
+};
+export default Contact;

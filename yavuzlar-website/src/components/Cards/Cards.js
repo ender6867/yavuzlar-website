@@ -1,4 +1,5 @@
-import { Grid, Box } from "@mui/material";
+import { Grid } from "@mui/material";
+import React from "react";
 import OneCard from "./OneCard/OneCard";
 
 const cards = [
@@ -21,16 +22,16 @@ const cards = [
   },
 ];
 
-export default function Cards() {
+export const Cards = () => {
   return (
-    <Box>
-      <Grid container spacing={8}>
-        {cards.map((card, index) => (
-          <Grid item sx={{ display: "flex" }} xs={12} md={4} key={index}>
-            <OneCard {...card} />
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <Grid container spacing={8}>
+      {cards.map((card, index) => (
+        <Grid item sx={{ display: "flex" }} xs={12} md={4} key={index}>
+          <OneCard {...card} />
+        </Grid>
+      ))}
+    </Grid>
   );
-}
+};
+
+export default Cards;
