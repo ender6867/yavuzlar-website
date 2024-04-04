@@ -6,23 +6,37 @@ import React from "react";
 const articles = [
   {
     id: "1",
-    title: "Front-end Teknolojileri Mahmut BEYAZGÜL ",
-    path: "abcd-1",
+    title: "Docker Escape",
+    path: "https://book.siberyavuzlar.com/privileged/docker-escape",
 
-    image: "/deneme.jpg",
+    image: "/docker.png",
     logo: "/logo.png",
   },
   {
     id: "2",
-    title: "React Hooks",
-    path: "abcd-2",
+    title: "Güvenli Kodlama (Secure Coding)",
+    path: "https://book.siberyavuzlar.com/yazilim/guvenli-kodlama-secure-coding",
     image: "/articlesImg.png",
     logo: "/logo.png",
   },
   {
     id: "3",
-    title: "Broken Access Control",
-    path: "abcd-3",
+    title: "Sanal Özel Ağlar (VPN)",
+    path: "https://book.siberyavuzlar.com/ag-guevenligi-ve-gizliligi/vpn",
+    image: "/articlesImg.png",
+    logo: "/logo.png",
+  },
+  {
+    id: "4",
+    title: "Nmap",
+    path: "https://book.siberyavuzlar.com/araclar/nmap",
+    image: "/articlesImg.png",
+    logo: "/logo.png",
+  },
+  {
+    id: "5",
+    title: "Two Factor Authentication Bypass",
+    path: "https://book.siberyavuzlar.com/web-guevenligi/two-factor-authentication-bypass",
     image: "/articlesImg.png",
     logo: "/logo.png",
   },
@@ -43,7 +57,7 @@ export const Articles = () => {
 
       {articles.map((article) => (
         <Grid item xs={12} key={article.id}>
-          <Link href={article.path} style={{ width: "100%" }}>
+          <Link href={article.path} target="_blank" style={{ width: "100%" }}>
             <Grid
               item
               xs={12}
@@ -116,52 +130,6 @@ export const Articles = () => {
                 />
               </Stack>
             </Grid>
-
-            {/* <Stack
-              direction="row"
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <Box
-                sx={{
-                  ml: "30px",
-                  // overflow: "hidden",
-                }}
-              >
-                <Stack
-                  sx={{
-                    display: "flex",
-                  }}
-                  direction="row"
-                  spacing={3}
-                >
-                  <Image alt="logo" src={article.logo} width={55} height={50} />
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      flexDirection: "column",
-                      overflow: "hidden",
-                    }}
-                    variant="h5"
-                  >
-                    {article.title}
-                  </Typography>
-                </Stack>
-              </Box>
-              <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-                <Image
-                  alt="image"
-                  src={article.image}
-                  width={318}
-                  height={80}
-                />
-              </Box>
-            </Stack> */}
           </Link>
         </Grid>
       ))}

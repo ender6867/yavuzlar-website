@@ -38,10 +38,6 @@ export const Contact = () => {
       setError(true);
       toast.clearWaitingQueue();
 
-      console.error("Lütfen tüm alanları doldurun.");
-      console.log("Email", email);
-      console.log("Subject", subject);
-      console.log("Message", message);
       return;
     }
 
@@ -62,11 +58,10 @@ export const Contact = () => {
         theme: "colored",
       });
       setError(true);
-      console.error("Geçerli bir e-posta adresi girin.");
       return;
     }
 
-    const mailtoLink = `mailto:whitesecz@outlook.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:cyberyavuzlar@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;

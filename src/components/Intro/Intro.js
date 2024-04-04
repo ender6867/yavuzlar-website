@@ -32,15 +32,32 @@ export const Intro = () => {
           }}
         >
           <Typography sx={{ fontWeight: "bold" }} variant="h3">
-            <span style={{ color: "#73CD07" }}>Siber Vatan</span>{" "}
+            <a
+              href="https://sibervatan.org/"
+              target="_blank"
+              style={{ color: "#73CD07" }}
+            >
+              Siber Vatan
+            </a>{" "}
             <span>için Beraber Çalışalım</span>
           </Typography>
-          <Typography sx={{ maxWidth: "58ch", mt: "75px" }}>
-            Yavuzlar Takımı, Siber Vatan projesi kapsamında kurulan ve web
-            güvenliği odaklı çalışan bir siber güvenlik takımıdır. Misyonumuz,
-            her bir takım üyesinin alanında yetkin hale gelmesini sağlamak ve
-            ülkemizin siber güvenlik sektöründeki yerli proje sayısını arttırmak
-            amacıyla çeşitli projeler yürütmektir.
+          <Typography sx={{ maxWidth: "70ch", mt: "75px" }}>
+            Yavuzlar Web Güvenliği ve Yazılım Takımı,{" "}
+            <a
+              href="https://sibervatan.org/"
+              target="_blank"
+              style={{ color: "#73CD07" }}
+            >
+              Siber Vatan
+            </a>{" "}
+            programı kapsamında kurulan, web güvenliği ve yazılım geliştirme
+            odaklı çalışan bir takımdır. Misyonumuz, her bir takım üyesini kendi
+            alanında yetkin bir düzeye yükseltmek ve ülkemizin siber güvenlik
+            sektöründeki yetenekli insan gücünü, Türkçe kaynakları ve yerli
+            projeleri artırmak amacıyla çalışmaktır. Siber güvenlik alanındaki
+            bilgi birikimimizi kullanarak çalışmakta ve ülkemizi uluslararası
+            düzeyde güvenli bir dijital geleceğe taşıma hedefiyle yoğun çaba
+            harcamaktayız.
           </Typography>
           <Button
             sx={{

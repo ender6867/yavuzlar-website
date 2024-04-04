@@ -8,14 +8,14 @@ const cards = [
     title: "Yenilikçi Projeler",
     description:
       "Bilgi birikimimizi ve tecrübelerimizi yenilikçi projeler üreterek değerlendiriyoruz.",
-    tabImg: "/gitHub.svg",
+    tabImg: "/tab.png",
   },
   {
     imgPath: "/laptop.png",
     title: "Takım İçi Eğitimler",
     description:
       "Tecrübelerimizi tüm takıma aktarabilmek için takım içi eğitimler düzenliyoruz.",
-    tabImg: "/github.png",
+    tabImg: "/tab.png",
   },
   {
     imgPath: "/rocket.png",

@@ -3,33 +3,34 @@ import Count from "./Count/Count";
 
 const countInfo = [
   {
-    number: "999",
+    number: "37",
     name: "Üye",
     image: "/team.png",
   },
   {
-    number: "6",
+    number: "4",
     name: "Proje",
     image: "/projects.png",
   },
   {
-    number: "50",
+    number: "39",
     name: "Makale",
     image: "/article.png",
   },
   {
-    number: "100",
+    number: "57",
     name: "Sunum",
     image: "/presentation.png",
   },
 ];
 
 export const About = () => {
+  console.log("MAhmut");
   return (
     <Box sx={{ mt: "185px", position: "relative" }} className="about">
       <div className="gradientAbout" />
       <Box>
-        <Typography className="title">Hakkımızda</Typography>
+        <Typography className="title">Neler Yapıyoruz?</Typography>
 
         <Stack
           spacing={2}
@@ -40,7 +41,7 @@ export const About = () => {
             textAlign: "center",
           }}
         >
-          <Typography sx={{ maxWidth: "80ch" }}>
+          {/* <Typography sx={{ maxWidth: "80ch" }}>
             Yavuzlar; Siber Vatan projesi altında kurulan, web güvenliği, web
             geliştirme ve siber istihbarat alanlarında çalışan ve projeler
             üreten bir siber güvenlik takımıdır.
@@ -52,6 +53,22 @@ export const About = () => {
             Uzmanı yetiştirmeyi ilke edinmiştir. Takım üyelerini geliştirmek ve
             ülkemizin siber güvenlik sektöründeki yerli ürün yelpazesini
             geliştirmek amacıyla çeşitli projeler yürütülmektedir.
+          </Typography> */}
+          <Typography sx={{ maxWidth: "80ch" }}>
+            Takım içi sunumlar ve görevler ile kişisel gelişim ve takım
+            çalışmalarını artırıyor, edindiğimiz bilgi ve tecrübelerimizi
+            pratiğe dökerek projeler geliştiriyoruz. Siber Güvenlik ve Yazılım
+            alanlarındaki bilgi ve deneyimlerimizi, makaleler ve blog yazıları
+            aracılığıyla paylaşarak, sektöre katkıda bulunuyoruz. Yaptığımız Web
+            Uygulama Güvenliği Laboratuvarı projemiz{" "}
+            <a
+              href="https://github.com/Yavuzlar/VulnLab"
+              style={{ color: "#73CD07" }}
+            >
+              VulnLab
+            </a>{" "}
+            ile <a href="https://www.blackhat.com/">Blackhat</a> konferansına
+            katılma şansı yakaladık.
           </Typography>
         </Stack>
       </Box>

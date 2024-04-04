@@ -81,14 +81,12 @@ export const OneCard = ({ imgPath, title, description, tabImg }) => {
             >
               {title}
             </Typography>
+            {isMobile ? (
+              <Image src={tabImg} alt="image" width={50} height={50} />
+            ) : (
+              ""
+            )}
           </CardContent>
-          <Image
-            // style={{ right: "0px !important", bottom: "0px !important" }}
-            src={tabImg}
-            alt="image"
-            width={50}
-            height={50}
-          />
         </Card>
 
         <Card

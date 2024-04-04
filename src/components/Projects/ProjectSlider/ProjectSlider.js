@@ -28,17 +28,17 @@ import {
 const projects = [
   {
     id: "1",
-    title: "VulnLab",
-    description:
-      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
-    image: "/vulnlab.png",
-  },
-  {
-    id: "2",
     title: "BLADIA",
     description:
       "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
     image: "/bladia.png",
+  },
+  {
+    id: "2",
+    title: "VulnLab",
+    description:
+      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+    image: "/vulnlab.png",
   },
   {
     id: "3",
@@ -47,20 +47,20 @@ const projects = [
       "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
     image: "/ctfgo.png",
   },
-  // {
-  //   id: "4",
-  //   title: "VulnLab",
-  //   description:
-  //     "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
-  //   image: "/vulnlab.png",
-  // },
-  // {
-  //   id: "5",
-  //   title: "BLADIA",
-  //   description:
-  //     "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
-  //   image: "/bladia.png",
-  // },
+  {
+    id: "4",
+    title: "CodeInLab",
+    description:
+      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+    image: "/logo.png",
+  },
+  {
+    id: "5",
+    title: "VulnWeb",
+    description:
+      "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
+    image: "/logo.png",
+  },
   // {
   //   id: "6",
   //   title: "CTFGo",

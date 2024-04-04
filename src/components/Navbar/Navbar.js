@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -32,12 +32,49 @@ const navItems = [
   },
   {
     id: "2",
+    title: "Neler Yapıyoruz?",
+    path: "/",
+  },
+  {
+    id: "3",
+    title: "Projelerimiz",
+    path: "/",
+  },
+  {
+    id: "4",
+    title: "Son Yazılarımız",
+    path: "/",
+  },
+  {
+    id: "5",
     title: "Book",
     path: "https://book.siberyavuzlar.com/",
   },
 ];
 
 export const Navbar = (props) => {
+  useEffect(() => {
+    console.log(
+      `This website is designed by %cBerru AYTEKİN%c,
+  Front-end is developed by %cMahmut BEYAZGÜL%c,
+  Back-end is developed by %cYusuf KÜÇÜKGÖKGÖZOĞLU%c,
+  Thanks to %cMehmet Özler ÇELİK%c, %cEmre ARIKAN%c, %cResulÇELİK%c and %cTayfun ÜRKUT%c for their support.
+  `,
+      "color: #73CD07;",
+      "color: unset;",
+      "color: #73CD07;",
+      "color: unset;",
+      "color: #73CD07;",
+      "color: unset;",
+      "color: #73CD07;",
+      "color: unset;",
+      "color: #73CD07;",
+      "color: unset;",
+      "color: #73CD07;",
+      "color: unset;"
+    );
+  }, []);
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 

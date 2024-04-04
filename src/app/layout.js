@@ -15,11 +15,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ThemeComponent>
-          <Navbar />
+          <Container maxWidth="xl">
+            <Navbar />
+          </Container>
           <Container maxWidth="xl">
             <BackgroundImages>{children}</BackgroundImages>
           </Container>
-          <Footer />
+          <Container maxWidth="xl">
+            <Footer />
+          </Container>
         </ThemeComponent>
       </body>
     </html>
