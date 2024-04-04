@@ -25,9 +25,12 @@ const countInfo = [
 ];
 
 export const About = () => {
-  console.log("MAhmut");
   return (
-    <Box sx={{ mt: "185px", position: "relative" }} className="about">
+    <Box
+      id="about"
+      sx={{ mt: "185px", position: "relative" }}
+      className="about"
+    >
       <div className="gradientAbout" />
       <Box>
         <Typography className="title">Neler Yapıyoruz?</Typography>

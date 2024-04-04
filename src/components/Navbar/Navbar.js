@@ -22,28 +22,18 @@ const drawerWidth = 240;
 const navItems = [
   {
     id: "1",
-    title: "Anasayfa ",
-    path: "/",
+    title: "Projelerimiz",
+    path: "projects",
   },
   {
     id: "2",
-    title: "Neler Yapıyoruz?",
-    path: "/",
+    title: "Yazılarımız",
+    path: "https://book.siberyavuzlar.com/",
   },
   {
     id: "3",
-    title: "Projelerimiz",
-    path: "/",
-  },
-  {
-    id: "4",
-    title: "Son Yazılarımız",
-    path: "/",
-  },
-  {
-    id: "5",
-    title: "Book",
-    path: "https://book.siberyavuzlar.com/",
+    title: "İletişim",
+    path: "contact",
   },
 ];
 
@@ -75,14 +65,15 @@ export const Navbar = (props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // const router = useRouter();
-
-  // const handleClick = (target) => {
-  //   router.push(`#${target}`);
-  // };
-
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const scrollToId = (path) => {
+    const element = document.getElementById(path);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const drawer = (
@@ -94,13 +85,22 @@ export const Navbar = (props) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
-            <ListItemButton
-              sx={{ textAlign: "center" }}
-              href={item.path}
-              target={item.title.startsWith("Book") ? "_blank" : ""}
-            >
-              <ListItemText primary={item.title} />
-            </ListItemButton>
+            {item.path.startsWith("http") ? (
+              <ListItemButton
+                sx={{ textAlign: "center" }}
+                href={item.path}
+                target="_blank"
+              >
+                <ListItemText primary={item.title} />
+              </ListItemButton>
+            ) : (
+              <ListItemButton
+                sx={{ textAlign: "center" }}
+                onClick={() => scrollToId(item.path)}
+              >
+                <ListItemText primary={item.title} />
+              </ListItemButton>
+            )}
           </ListItem>
         ))}
         {/* <LanguageSelect /> */}
@@ -147,13 +147,22 @@ export const Navbar = (props) => {
           <List sx={{ display: { xs: "none", sm: "flex", md: "flex" } }}>
             {navItems.map((item) => (
               <ListItem key={item.id} disablePadding>
-                <ListItemButton
-                  sx={{ textAlign: "center" }}
-                  href={item.path}
-                  target={item.title.startsWith("Book") ? "_blank" : ""}
-                >
-                  <ListItemText primary={item.title} />
-                </ListItemButton>
+                {item.path.startsWith("http") ? (
+                  <ListItemButton
+                    sx={{ textAlign: "center" }}
+                    href={item.path}
+                    target="_blank"
+                  >
+                    <ListItemText primary={item.title} />
+                  </ListItemButton>
+                ) : (
+                  <ListItemButton
+                    sx={{ textAlign: "center" }}
+                    onClick={() => scrollToId(item.path)}
+                  >
+                    <ListItemText primary={item.title} />
+                  </ListItemButton>
+                )}
               </ListItem>
             ))}
             <ListItem>{/* <LanguageSelect /> */}</ListItem>
