@@ -1,6 +1,4 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import Image from "next/image";
-import React from "react";
 
 export const Intro = () => {
   return (
@@ -54,7 +52,7 @@ export const Intro = () => {
             odaklı çalışan bir takımdır. Misyonumuz, her bir takım üyesini kendi
             alanında yetkin bir düzeye yükseltmek ve ülkemizin siber güvenlik
             sektöründeki yetenekli insan gücünü, Türkçe kaynakları ve yerli
-            projeleri artırmak amacıyla çalışmaktır. Siber güvenlik alanındaki
+            projeleri artırmak amacıyla çalışmaktır.<br /><br /> Siber güvenlik alanındaki
             bilgi birikimimizi kullanarak çalışmakta ve ülkemizi uluslararası
             düzeyde güvenli bir dijital geleceğe taşıma hedefiyle yoğun çaba
             harcamaktayız.
