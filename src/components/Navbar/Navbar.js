@@ -6,21 +6,16 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Link from "next/link";
 import Image from "next/image";
 import navbarLogo from "../../../public/navbar-logo.png";
-import { Container, FormControl, MenuItem, Select, Stack } from "@mui/material";
-import { Language, LanguageSelect } from "./LanguageSelect/LanguageSelect";
-import { useRouter } from "next/router";
+import { IconButton, ListItemButton } from "@mui/material";
 
 const drawerWidth = 240;
 
@@ -58,7 +53,7 @@ export const Navbar = (props) => {
       `This website is designed by %cBerru AYTEKİN%c,
   Front-end is developed by %cMahmut BEYAZGÜL%c,
   Back-end is developed by %cYusuf KÜÇÜKGÖKGÖZOĞLU%c,
-  Thanks to %cMehmet Özler ÇELİK%c, %cEmre ARIKAN%c, %cResulÇELİK%c and %cTayfun ÜRKUT%c for their support.
+  Thanks to %cMehmet Özler ÇELİK%c, %cTayfun ÜRKUT%c, %cEmre ARIKAN%c and %cResul ÇELİK%c for their support.
   `,
       "color: #73CD07;",
       "color: unset;",
@@ -66,11 +61,13 @@ export const Navbar = (props) => {
       "color: unset;",
       "color: #73CD07;",
       "color: unset;",
-      "color: #73CD07;",
+      "color: #f00;",
       "color: unset;",
-      "color: #73CD07;",
+      "color: #f00;",
       "color: unset;",
-      "color: #73CD07;",
+      "color: #f00;",
+      "color: unset;",
+      "color: #f00;",
       "color: unset;"
     );
   }, []);

@@ -57,9 +57,9 @@ export const About = () => {
           <Typography sx={{ maxWidth: "80ch" }}>
             Takım içi sunumlar ve görevler ile kişisel gelişim ve takım
             çalışmalarını artırıyor, edindiğimiz bilgi ve tecrübelerimizi
-            pratiğe dökerek projeler geliştiriyoruz. Siber Güvenlik ve Yazılım
+            pratiğe dökerek projeler geliştiriyoruz. <br /><br />Siber Güvenlik ve Yazılım
             alanlarındaki bilgi ve deneyimlerimizi, makaleler ve blog yazıları
-            aracılığıyla paylaşarak, sektöre katkıda bulunuyoruz. Yaptığımız Web
+            aracılığıyla paylaşarak, sektöre katkıda bulunuyoruz. <br /><br />Yaptığımız Web
             Uygulama Güvenliği Laboratuvarı projemiz{" "}
             <a
               href="https://github.com/Yavuzlar/VulnLab"
@@ -68,7 +68,7 @@ export const About = () => {
               VulnLab
             </a>{" "}
             ile <a href="https://www.blackhat.com/">Blackhat</a> konferansına
-            katılma şansı yakaladık.
+            katılım sağladık.
           </Typography>
         </Stack>
       </Box>
