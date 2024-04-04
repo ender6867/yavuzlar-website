@@ -45,6 +45,7 @@ const articles = [
 export const Articles = () => {
   return (
     <Grid
+      id="articles"
       container
       spacing={2.5}
       justifyContent={"center"}

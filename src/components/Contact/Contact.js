@@ -69,6 +69,7 @@ export const Contact = () => {
 
   return (
     <Box
+      id="contact"
       sx={{
         mt: "120px",
         display: "flex",
