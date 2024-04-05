@@ -22,12 +22,19 @@ import {
 } from "@mui/material";
 
 const projects = [
+  // {
+  //   id: "1",
+  //   title: "BLADIA",
+  //   description:
+  //     "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
+  //   image: "/bladia.png",
+  // },
   {
-    id: "1",
-    title: "BLADIA",
+    id: "4",
+    title: "CodeInLab",
     description:
-      "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
-    image: "/bladia.png",
+      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+    image: "/logo.png",
   },
   {
     id: "2",
@@ -42,13 +49,6 @@ const projects = [
     description:
       "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
     image: "/ctfgo.png",
-  },
-  {
-    id: "4",
-    title: "CodeInLab",
-    description:
-      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
-    image: "/logo.png",
   },
   {
     id: "5",

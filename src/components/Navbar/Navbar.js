@@ -75,7 +75,7 @@ const Navbar = (props) => {
   const scrollToId = (path) => {
     const element = document.getElementById(path);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: 'start'});
     }
   };
 

@@ -60,6 +60,7 @@ a {
   top: 450px;
   z-index: -1;
 }
+
 .gradientAbout {
   width: 1px;
   height: 1px;
@@ -73,6 +74,7 @@ a {
   top: 0px;
   z-index: -1;
 }
+
 .gradientProjects {
   width: 1px;
   height: 1px;
@@ -86,6 +88,7 @@ a {
   top: 0px;
   z-index: -1;
 }
+
 .gradientArticles {
   width: 1px;
   height: 1px;
@@ -99,6 +102,7 @@ a {
   top: 0px;
   z-index: -1;
 }
+
 .gradientContactLeft {
   width: 1px;
   height: 1px;
@@ -112,6 +116,7 @@ a {
   top: 0px;
   z-index: -1;
 }
+
 .gradientContactRight {
   width: 1px;
   height: 1px;
@@ -125,6 +130,7 @@ a {
   bottom: 0px;
   z-index: -1;
 }
+
 /* #gradient1 {
   width: 1px;
   height: 1px;
