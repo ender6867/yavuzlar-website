@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar/Navbar";
 import { Container } from "@mui/material";
 import Footer from "@/components/Footer/Footer";
 import ThemeComponent from "@/components/ThemeComponent/ThemeComponent";
-import { BackgroundImages } from "@/components/BackgroundImages/BackgroundImages";
 
 export const metadata = {
   title: "Siber Yavuzlar",
@@ -18,9 +17,7 @@ export default function RootLayout({ children }) {
           <Container maxWidth="xl">
             <Navbar />
           </Container>
-          <Container maxWidth="xl">
-            <BackgroundImages>{children}</BackgroundImages>
-          </Container>
+          <Container maxWidth="xl">{children}</Container>
           <Container maxWidth="xl">
             <Footer />
           </Container>
