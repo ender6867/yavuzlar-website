@@ -37,29 +37,33 @@ const navItems = [
   },
 ];
 
-export const Navbar = (props) => {
-  useEffect(() => {
-    console.log(
-      `This website is designed by %cBerru AYTEKİN%c,
+const developers = () => {
+  console.log(
+    `This website is designed by %cBerru AYTEKİN%c,
   Front-end is developed by %cMahmut BEYAZGÜL%c,
   Back-end is developed by %cYusuf KÜÇÜKGÖKGÖZOĞLU%c,
   Thanks to %cMehmet Özler ÇELİK%c, %cTayfun ÜRKUT%c, %cEmre ARIKAN%c and %cResul ÇELİK%c for their support.
   `,
-      "color: #73CD07;",
-      "color: unset;",
-      "color: #73CD07;",
-      "color: unset;",
-      "color: #73CD07;",
-      "color: unset;",
-      "color: #f00;",
-      "color: unset;",
-      "color: #f00;",
-      "color: unset;",
-      "color: #f00;",
-      "color: unset;",
-      "color: #f00;",
-      "color: unset;"
-    );
+    "color: #73CD07;",
+    "color: unset;",
+    "color: #73CD07;",
+    "color: unset;",
+    "color: #73CD07;",
+    "color: unset;",
+    "color: #f00;",
+    "color: unset;",
+    "color: #f00;",
+    "color: unset;",
+    "color: #f00;",
+    "color: unset;",
+    "color: #f00;",
+    "color: unset;"
+  );
+};
+
+const Navbar = (props) => {
+  useEffect(() => {
+    developers();
   }, []);
 
   const { window } = props;

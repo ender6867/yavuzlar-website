@@ -4,7 +4,7 @@ import ProjectSlider from "./ProjectSlider/ProjectSlider";
 
 export const Projects = () => {
   return (
-    <Grid container sx={{ mt: "185px", position: "relative" }}>
+    <Grid id="projects" container sx={{ mt: "185px", position: "relative" }}>
       <div className="gradientProjects" />
       <Grid
         item
