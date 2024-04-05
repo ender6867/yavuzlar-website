@@ -11,7 +11,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
-import Image from "next/image";
 import navbarLogo from "../../../public/navbar-logo.png";
 import { IconButton, ListItemButton } from "@mui/material";
 import { OpenInNew } from "@mui/icons-material";
@@ -137,7 +136,7 @@ const Navbar = (props) => {
           }}
         >
           <Link href="/">
-            <Image
+            <img
               src={navbarLogo}
               alt="navbar-image"
               style={{

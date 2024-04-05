@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FormControl, MenuItem, Select, Stack } from "@mui/material";
-import Image from "next/image";
 
 export const LanguageSelect = () => {
   const [lang, setLang] = useState("tr");
@@ -10,7 +9,7 @@ export const LanguageSelect = () => {
   return (
     <FormControl>
       <Stack direction="row" textAlign="center" alignItems="center" spacing={1}>
-        <Image
+        <img
           alt="image"
           src={lang === "tr" ? "/turkey.png" : "/england.png"}
           width={50}

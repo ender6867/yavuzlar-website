@@ -1,7 +1,5 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import { Grid, Stack, Typography } from "@mui/material";
 import Link from "next/link";
-import React from "react";
 
 const articles = [
   {
@@ -91,7 +89,7 @@ export const Articles = () => {
                   gap: "32px",
                 }}
               >
-                <Image
+                <img
                   src={article.logo}
                   alt="article-logo-image"
                   width={55}
@@ -118,7 +116,7 @@ export const Articles = () => {
                   clipPath: "polygon(25% 0, 100% 0%, 100% 100%, 0% 100%)",
                 }}
               >
-                <Image
+                <img
                   style={{
                     width: "100%",
                     height: "100%",

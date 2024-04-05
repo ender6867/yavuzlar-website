@@ -1,6 +1,5 @@
 "use client";
 import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import { ScrollTop } from "primereact/scrolltop";
 import { useEffect, useState } from "react";
@@ -70,7 +69,7 @@ export const Footer = () => {
             justifyContent: "center",
           }}
         >
-          <Image
+          <img
             src="/footer-logo.png"
             alt="footer-image"
             width={350}
@@ -100,7 +99,7 @@ export const Footer = () => {
                 href={social.link}
                 style={{ marginLeft: "30px" }}
               >
-                <Image
+                <img
                   alt="social-images"
                   src={social.logo}
                   width={20}

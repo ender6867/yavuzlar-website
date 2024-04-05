@@ -4,9 +4,8 @@ import {
   Card,
   CardContent,
   Typography,
-  useMediaQuery,
+  useMediaQuery
 } from "@mui/material";
-import Image from "next/image";
 
 export const OneCard = ({ imgPath, title, description, tabImg }) => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
@@ -83,7 +82,7 @@ export const OneCard = ({ imgPath, title, description, tabImg }) => {
             </Typography>
 
             {isMobile ? (
-              <Image src={tabImg} alt="image" width={50} height={50} style={{ position: 'absolute', right: 0, bottom: 0, transform: 'translate(-16px, -8px)' }} />
+              <img src={tabImg} alt="image" width={50} height={50} style={{ position: 'absolute', right: 0, bottom: 0, transform: 'translate(-16px, -8px)' }} />
             ) : (
               ""
             )}

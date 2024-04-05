@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -160,7 +159,7 @@ export default function OurProjects() {
                   },
                 }}
               >
-                <Image
+                <img
                   src={"/gitHub.svg"}
                   alt="image"
                   height={60}

@@ -1,6 +1,5 @@
 "use client";
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
 import CountUp from "react-countup";
 
 export const Count = ({ number, name, image }) => {
@@ -25,7 +24,7 @@ export const Count = ({ number, name, image }) => {
           justifyContent: "center",
         }}
       >
-        <Image src={image} alt="image" width={60} height={60} />
+        <img src={image} alt="image" width={60} height={60} />
 
         <Typography
           sx={{
