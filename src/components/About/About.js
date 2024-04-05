@@ -26,9 +26,7 @@ const countInfo = [
   },
 ];
 
-
 const About = () => {
-
   return (
     <Box
       id="about"
@@ -60,12 +58,20 @@ const About = () => {
             Yaptığımız Web Uygulama Güvenliği Laboratuvarı projemiz{" "}
             <a
               href="https://github.com/Yavuzlar/VulnLab"
+              target="_blank"
               style={{ color: "#73CD07" }}
             >
               VulnLab
             </a>{" "}
-            ile <a href="https://www.blackhat.com/">Blackhat</a> konferansına
-            katılım sağladık.
+            ile{" "}
+            <a
+              href="https://www.blackhat.com/"
+              target="_blank"
+              style={{ color: "#73CD07" }}
+            >
+              Blackhat
+            </a>{" "}
+            konferansına katılım sağladık.
           </Typography>
         </Stack>
       </Box>
