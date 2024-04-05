@@ -2,17 +2,16 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 
 export const Intro = () => {
   return (
-    <Box sx={{ height: "100%", position: "relative" }}>
+    <Box sx={{ height: "100%" }}>
       <div className="gradientIntro" />
+
       <Grid
         container
         sx={{
-          // mt: { xs: "20px", sm: "30px", md: "40px" },
           justifyContent: "center",
           alignItems: "center",
           height: "100%",
         }}
-        spacing={5}
       >
         <Grid
           item
@@ -68,7 +67,7 @@ export const Intro = () => {
               backdropFilter: "blur(10px)",
               color: "#73CD07",
 
-              borderRadius: "15px",
+              borderRadius: "20px",
               padding: "15px",
               fontSize: "18px",
 

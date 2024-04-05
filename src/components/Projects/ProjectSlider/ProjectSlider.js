@@ -1,19 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-
 import {
   EffectCoverflow,
   Pagination,
-  Navigation,
-  Autoplay,
+  Navigation
 } from "swiper/modules";
 import {
   Box,
@@ -21,8 +18,7 @@ import {
   CardContent,
   CardMedia,
   Divider,
-  Grid,
-  Typography,
+  Typography
 } from "@mui/material";
 
 const projects = [
@@ -122,7 +118,7 @@ export default function OurProjects() {
           <Card
             sx={{
               width: "100%",
-              borderRadius: "30px",
+              borderRadius: "20px",
               backgroundColor: "transparent",
               background: "rgba(255,255,255,0.1)",
               backdropFilter: "blur(10px)",
@@ -147,7 +143,7 @@ export default function OurProjects() {
                 }}
               >
                 <CardMedia
-                  sx={{ borderRadius: "30px" }}
+                  sx={{ borderRadius: "20px" }}
                   component="img"
                   image={project.image}
                 />

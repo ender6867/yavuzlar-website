@@ -1,7 +1,6 @@
 "use client";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import Count from "./Count/Count";
-import { useEffect } from "react";
 
 const countInfo = [
   {
@@ -83,7 +82,7 @@ const About = () => {
           p: "40px",
           mt: "120px",
 
-          borderRadius: "30px",
+          borderRadius: "20px",
 
           backgroundColor: "transparent",
           background: "rgba(255,255,255,0.1)",

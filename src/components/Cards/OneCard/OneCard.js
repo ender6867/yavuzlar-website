@@ -41,7 +41,7 @@ export const OneCard = ({ imgPath, title, description, tabImg }) => {
 
             position: "absolute",
 
-            borderRadius: "30px",
+            borderRadius: "20px",
             border: "2px solid transparent",
 
             backgroundColor: "transparent",
@@ -103,7 +103,7 @@ export const OneCard = ({ imgPath, title, description, tabImg }) => {
             transform: "rotateY(180deg)",
             position: "absolute",
 
-            borderRadius: "30px",
+            borderRadius: "20px",
             border: "2px solid transparent",
 
             backgroundColor: "transparent",

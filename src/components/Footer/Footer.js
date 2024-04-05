@@ -1,7 +1,9 @@
-import { Box, Grid, Typography } from "@mui/material";
+"use client";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { ScrollTop } from "primereact/scrolltop";
+import { useEffect, useState } from "react";
 
 const socialMedias = [
   {
@@ -37,6 +39,22 @@ const socialMedias = [
 ];
 
 export const Footer = () => {
+  const [pageHeight, setPageHeight] = useState(0);
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
+  useEffect(() => {
+    setPageHeight(document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+    window.addEventListener("scroll", () => {
+      setScrollTop(document.documentElement.scrollTop);
+
+      console.log("scrollTop", document.documentElement.scrollTop, document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    });
+
+  }, []);
+
   return (
     <Box sx={{ py: '40px' }}>
       <Grid
@@ -94,11 +112,20 @@ export const Footer = () => {
 
           <ScrollTop
             style={{
-              backgroundColor: "#73CD07",
+              backgroundColor: "rgba(115, 205, 7, 0.6)",
               borderRadius: "50%",
-              width: "50px",
-              height: "50px",
+              width: "40px",
+              height: "40px",
               color: "white",
+              transition: "transform 0.2s",
+              "&:hover button": {
+                backgroundColor: "#f00",
+              },
+              ...(
+                scrollTop >= pageHeight - 100
+                  ? { transform: isMobile ? "translate(12px, -80px)" : "translateX(12px)" }
+                  : { transform: "translate(0, 0)" }
+              ),
             }}
             target="window"
           />

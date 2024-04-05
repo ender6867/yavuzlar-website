@@ -14,6 +14,7 @@ import Link from "next/link";
 import Image from "next/image";
 import navbarLogo from "../../../public/navbar-logo.png";
 import { IconButton, ListItemButton } from "@mui/material";
+import { OpenInNew } from "@mui/icons-material";
 
 const drawerWidth = 240;
 
@@ -149,13 +150,20 @@ const Navbar = (props) => {
 
           <List sx={{ display: { xs: "none", sm: "flex", md: "flex" } }}>
             {navItems.map((item) => (
-              <ListItem key={item.id} disablePadding>
+              <ListItem key={item.id} disablePadding sx={{
+                "&:hover": {
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  borderRadius: "20px",
+                },
+              }}>
                 {item.path.startsWith("http") ? (
                   <ListItemButton
-                    sx={{ textAlign: "center" }}
+                    sx={{ textAlign: "center", gap: '8px' }}
                     href={item.path}
                     target="_blank"
                   >
+                    <OpenInNew />
+
                     <ListItemText primary={item.title} />
                   </ListItemButton>
                 ) : (

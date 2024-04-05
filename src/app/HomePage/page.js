@@ -5,12 +5,11 @@ import Contact from "@/components/Contact/Contact";
 import Intro from "@/components/Intro/Intro";
 import Projects from "@/components/Projects/Projects";
 import { Grid } from "@mui/material";
-import React from "react";
 
 export const Homepage = () => {
   return (
     <Grid container>
-      <Grid item xs={12} sx={{ height: "calc(100vh - 88px)" }}>
+      <Grid item xs={12} sx={{ height: "calc(100vh - 85px)", position: 'relative', display: 'flex' }}>
         <Intro />
       </Grid>
       <Grid item xs={12}>

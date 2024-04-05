@@ -1,5 +1,4 @@
 "use client";
-import { SetMealSharp } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -7,7 +6,7 @@ import {
   CardContent,
   Grid,
   TextField,
-  Typography,
+  Typography
 } from "@mui/material";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -91,8 +90,8 @@ export const Contact = () => {
           backgroundColor: "transparent",
           background: "rgba(255,255,255,0.1)",
           backdropFilter: "blur(10px)",
-          mt: "30px",
-          borderRadius: "30px",
+          mt: "40px",
+          borderRadius: "20px",
           maxWidth: "860px",
         }}
       >
@@ -121,7 +120,7 @@ export const Contact = () => {
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
                       borderColor: "#73CD07",
-                      borderRadius: "30px",
+                      borderRadius: "20px",
                     },
                     "&:hover fieldset": {
                       borderColor: "#73CD07",
@@ -151,7 +150,7 @@ export const Contact = () => {
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
                       borderColor: "#73CD07",
-                      borderRadius: "30px",
+                      borderRadius: "20px",
                     },
                     "&:hover fieldset": {
                       borderColor: "#73CD07",
@@ -181,7 +180,7 @@ export const Contact = () => {
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
                       borderColor: "#73CD07",
-                      borderRadius: "30px",
+                      borderRadius: "20px",
                     },
                     "&:hover fieldset": {
                       borderColor: "#73CD07",
@@ -216,7 +215,7 @@ export const Contact = () => {
                   background: "rgba(255,255,255,0.1)",
                   backdropFilter: "blur(10px)",
                   color: "#73CD07",
-                  borderRadius: "15px",
+                  borderRadius: "20px",
                   fontSize: "18px",
                   fontWeight: "bold",
                   border: "1px solid transparent",
