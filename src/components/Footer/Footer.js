@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { ScrollTop } from "primereact/scrolltop";
@@ -38,51 +38,35 @@ const socialMedias = [
 
 export const Footer = () => {
   return (
-    <Grid
-      container
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        mt: "50px",
-        mb: "50px",
-      }}
-    >
+    <Box sx={{ py: '40px' }}>
       <Grid
-        item
-        xs={12}
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Image
-          src="/footer-logo.png"
-          alt="footer-image"
-          width={350}
-          height={75}
-        />
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        sx={{
-          marginTop: "70px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          px: "70px ",
-        }}
+        container
+        spacing={5}
       >
         <Grid
           item
           xs={12}
-          md={6}
           sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+          }}
+        >
+          <Image
+            src="/footer-logo.png"
+            alt="footer-image"
+            width={350}
+            height={75}
+          />
+        </Grid>
+
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
           <Typography>
@@ -90,32 +74,24 @@ export const Footer = () => {
             {new Date().getFullYear()} © Yavuzlar Web Güvenliği ve Yazılım
             Takımı
           </Typography>
-        </Grid>
 
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          {socialMedias.map((social) => (
-            <Link
-              key={social.id}
-              href={social.link}
-              style={{ marginLeft: "30px" }}
-            >
-              <Image
-                alt="social-images"
-                src={social.logo}
-                width={20}
-                height={20}
-              />
-            </Link>
-          ))}
+          <Box>
+            {socialMedias.map((social) => (
+              <Link
+                key={social.id}
+                href={social.link}
+                style={{ marginLeft: "30px" }}
+              >
+                <Image
+                  alt="social-images"
+                  src={social.logo}
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            ))}
+          </Box>
+
           <ScrollTop
             style={{
               backgroundColor: "#73CD07",
@@ -128,7 +104,7 @@ export const Footer = () => {
           />
         </Grid>
       </Grid>
-    </Grid>
+    </Box>
   );
 };
 

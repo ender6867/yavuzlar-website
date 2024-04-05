@@ -1,10 +1,19 @@
 "use client";
-import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/material";
-import React from "react";
+import { ThemeProvider, createTheme } from "@mui/material";
 
 export const ThemeComponent = ({ children }) => {
   const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 900,
+        lg: 1200,
+        mdlg: 1400,
+        xl: 1536,
+      },
+    },
+    
     palette: {
       primary: {
         main: "#00f",
@@ -13,6 +22,7 @@ export const ThemeComponent = ({ children }) => {
         main: "#73CD07",
       },
     },
+
     components: {
       MuiButton: {
         styleOverrides: {

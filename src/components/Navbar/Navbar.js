@@ -1,9 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -116,16 +114,14 @@ const Navbar = (props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar
-        position="absolute"
-        component="nav"
+    <Fragment>
+      <Box
         sx={{
           background: "transparent",
           boxShadow: "none",
           mt: "15px",
-          px: { xs: "0px", sm: "0px", md: "100px" },
+          height: 'auto',
+          width: "100%",
         }}
       >
         <Toolbar
@@ -135,6 +131,8 @@ const Navbar = (props) => {
             textAlign: "center",
             flexDirection: "row",
             justifyContent: "space-between",
+            px: "0 !important",
+            height: "auto",
           }}
         >
           <Link href="/">
@@ -148,6 +146,7 @@ const Navbar = (props) => {
               }}
             />
           </Link>
+
           <List sx={{ display: { xs: "none", sm: "flex", md: "flex" } }}>
             {navItems.map((item) => (
               <ListItem key={item.id} disablePadding>
@@ -169,7 +168,7 @@ const Navbar = (props) => {
                 )}
               </ListItem>
             ))}
-            <ListItem>{/* <LanguageSelect /> */}</ListItem>
+            {/* <ListItem><LanguageSelect /></ListItem> */}
           </List>
 
           <IconButton
@@ -182,32 +181,28 @@ const Navbar = (props) => {
             <MenuIcon />
           </IconButton>
         </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          anchor="right"
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
       </Box>
-    </Box>
+
+      <Drawer
+        anchor="right"
+        container={container}
+        variant="temporary"
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{
+          keepMounted: true,
+        }}
+        sx={{
+          display: { xs: "block", sm: "none" },
+          "& .MuiDrawer-paper": {
+            boxSizing: "border-box",
+            width: drawerWidth,
+          },
+        }}
+      >
+        {drawer}
+      </Drawer>
+    </Fragment>
   );
 };
 

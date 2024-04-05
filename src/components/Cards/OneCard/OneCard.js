@@ -77,12 +77,13 @@ export const OneCard = ({ imgPath, title, description, tabImg }) => {
             </Box>
 
             <Typography
-              sx={{ fontSize: "2rem", fontWeight: 700, color: "#fff" }}
+              sx={{ fontSize: "2rem", fontWeight: 700, color: "#fff", textAlign: "center" }}
             >
               {title}
             </Typography>
+
             {isMobile ? (
-              <Image src={tabImg} alt="image" width={50} height={50} />
+              <Image src={tabImg} alt="image" width={50} height={50} style={{ position: 'absolute', right: 0, bottom: 0, transform: 'translate(-16px, -8px)' }} />
             ) : (
               ""
             )}
