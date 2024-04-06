@@ -1,4 +1,12 @@
+"use client";
 import { Box, Button, Grid, Typography } from "@mui/material";
+
+const scrollToId = (path) => {
+  const element = document.getElementById(path);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export const Intro = () => {
   return (
@@ -52,10 +60,11 @@ export const Intro = () => {
             odaklı çalışan bir takımdır. Misyonumuz, her bir takım üyesini kendi
             alanında yetkin bir düzeye yükseltmek ve ülkemizin siber güvenlik
             sektöründeki yetenekli insan gücünü, Türkçe kaynakları ve yerli
-            projeleri artırmak amacıyla çalışmaktır.<br /><br /> Siber güvenlik alanındaki
-            bilgi birikimimizi kullanarak çalışmakta ve ülkemizi uluslararası
-            düzeyde güvenli bir dijital geleceğe taşıma hedefiyle yoğun çaba
-            harcamaktayız.
+            projeleri artırmak amacıyla çalışmaktır.
+            <br />
+            <br /> Siber güvenlik alanındaki bilgi birikimimizi kullanarak
+            çalışmakta ve ülkemizi uluslararası düzeyde güvenli bir dijital
+            geleceğe taşıma hedefiyle yoğun çaba harcamaktayız.
           </Typography>
           <Button
             sx={{
@@ -77,6 +86,7 @@ export const Intro = () => {
                 border: "1px solid #73CD07",
               },
             }}
+            onClick={() => scrollToId("about")}
           >
             Hakkımızda
           </Button>
