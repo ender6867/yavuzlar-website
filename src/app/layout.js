@@ -6,8 +6,8 @@ import Footer from "@/components/Footer/Footer";
 import ThemeComponent from "@/components/ThemeComponent/ThemeComponent";
 
 export const metadata = {
-  title: "Siber Yavuzlar",
-  description: "Siber Yavuzlar Web Güvenliği ve Yazılım Takımı",
+  title: "Yavuzlar",
+  description: "Yavuzlar Web Güvenliği ve Yazılım Takımı",
   icons: {
     icon: '/yavuzlar-logo-siyah-stroke-kare.png',
   },
