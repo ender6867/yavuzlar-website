@@ -35,6 +35,40 @@ const navItems = [
   },
 ];
 
+const drawerItems = [
+  {
+    id: "1",
+    title: "Yazılarımız",
+    path: "https://book.siberyavuzlar.com/",
+  },
+  {
+    id: "2",
+    title: "Anasayfa",
+    path: "/",
+  },
+  {
+    id: "3",
+    title: "Neler Yapıyoruz?",
+    path: "about",
+  },
+  {
+    id: "4",
+    title: "Projelerimiz",
+    path: "projects",
+  },
+  {
+    id: "5",
+    title: "Son Yazılarımız",
+    path: "articles",
+  },
+
+  {
+    id: "6",
+    title: "İletişim",
+    path: "contact",
+  },
+];
+
 const developers = () => {
   console.log(
     `This website is designed by %cBerru AYTEKİN%c,
@@ -74,7 +108,7 @@ const Navbar = (props) => {
   const scrollToId = (path) => {
     const element = document.getElementById(path);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: 'start'});
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -85,7 +119,7 @@ const Navbar = (props) => {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {drawerItems.map((item) => (
           <ListItem key={item.id} disablePadding>
             {item.path.startsWith("http") ? (
               <ListItemButton
@@ -93,6 +127,7 @@ const Navbar = (props) => {
                 href={item.path}
                 target="_blank"
               >
+                <OpenInNew />
                 <ListItemText primary={item.title} />
               </ListItemButton>
             ) : (
@@ -120,7 +155,7 @@ const Navbar = (props) => {
           background: "transparent",
           boxShadow: "none",
           mt: "15px",
-          height: 'auto',
+          height: "auto",
           width: "100%",
         }}
       >
@@ -149,15 +184,19 @@ const Navbar = (props) => {
 
           <List sx={{ display: { xs: "none", sm: "flex", md: "flex" } }}>
             {navItems.map((item) => (
-              <ListItem key={item.id} disablePadding sx={{
-                "&:hover": {
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  borderRadius: "20px",
-                },
-              }}>
+              <ListItem
+                key={item.id}
+                disablePadding
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "rgba(255,255,255,0.1)",
+                    borderRadius: "20px",
+                  },
+                }}
+              >
                 {item.path.startsWith("http") ? (
                   <ListItemButton
-                    sx={{ textAlign: "center", gap: '8px' }}
+                    sx={{ textAlign: "center", gap: "8px" }}
                     href={item.path}
                     target="_blank"
                   >
