@@ -87,7 +87,7 @@ export const Intro = () => {
             }}
             onClick={() => scrollToId("about")}
           >
-            Hakkımızda
+            Neler Yapıyoruz?
           </Button>
         </Grid>
         <Grid

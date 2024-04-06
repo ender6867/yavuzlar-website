@@ -44,22 +44,19 @@ export const Footer = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
   useEffect(() => {
-    setPageHeight(document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    setPageHeight(
+      document.documentElement.scrollHeight -
+        document.documentElement.clientHeight
+    );
 
     window.addEventListener("scroll", () => {
       setScrollTop(document.documentElement.scrollTop);
-
-      console.log("scrollTop", document.documentElement.scrollTop, document.documentElement.scrollHeight - document.documentElement.clientHeight);
     });
-
   }, []);
 
   return (
-    <Box sx={{ py: '40px' }}>
-      <Grid
-        container
-        spacing={5}
-      >
+    <Box sx={{ py: "40px" }}>
+      <Grid container spacing={5}>
         <Grid
           item
           xs={12}
@@ -120,11 +117,13 @@ export const Footer = () => {
               "&:hover button": {
                 backgroundColor: "#f00",
               },
-              ...(
-                scrollTop >= pageHeight - 100
-                  ? { transform: isMobile ? "translate(12px, -80px)" : "translateX(12px)" }
-                  : { transform: "translate(0, 0)" }
-              ),
+              ...(scrollTop >= pageHeight - 100
+                ? {
+                    transform: isMobile
+                      ? "translate(12px, -80px)"
+                      : "translateX(12px)",
+                  }
+                : { transform: "translate(0, 0)" }),
             }}
             target="window"
           />
