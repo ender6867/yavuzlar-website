@@ -32,28 +32,28 @@ const projects = [
     id: "4",
     title: "CodeInLab",
     description:
-      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+      "Yazılım dillerini pratik bir şekilde deneyimleyebilecekleri ve yazılım geliştirme becerilerini geliştirebilecekleri laboratuvar ortamıdır.",
     image: "/logo.png",
   },
   {
     id: "2",
     title: "VulnLab",
     description:
-      "Vulnlab, Web zafiyetlerinin uygulamalı olarak öğrenilebileceği laboratuvar ortamı sağlar..",
+      "Web zafiyetlerinin uygulamalı olarak öğrenilebileceği web uygulama güvenliği laboratuvar ortamıdır.",
     image: "/vulnlab.png",
   },
   {
     id: "3",
     title: "CTFGo",
     description:
-      "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
+      "CTFgo, Go programlama dili ile geliştirilen Capture The Flag (CTF) platformudur.",
     image: "/ctfgo.png",
   },
   {
     id: "5",
     title: "VulnWeb",
     description:
-      "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
+      "Web uygulama güvenliği zafiyetlerinin pratiğinin yapılabileceği gerçek bir website simülasyon laboratuvarı.",
     image: "/logo.png",
   },
   // {
