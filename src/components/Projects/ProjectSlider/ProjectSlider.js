@@ -6,28 +6,18 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import {
-  EffectCoverflow,
-  Pagination,
-  Navigation
-} from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import {
   Box,
   Card,
   CardContent,
   CardMedia,
   Divider,
-  Typography
+  Typography,
+  useMediaQuery,
 } from "@mui/material";
 
 const projects = [
-  // {
-  //   id: "1",
-  //   title: "BLADIA",
-  //   description:
-  //     "Web uygulama güvenliğinin test edilebileceği, grafiksel arayüze sahip kapsamlı bir araçtır.",
-  //   image: "/bladia.png",
-  // },
   {
     id: "4",
     title: "CodeInLab",
@@ -56,16 +46,10 @@ const projects = [
       "Web uygulama güvenliği zafiyetlerinin pratiğinin yapılabileceği gerçek bir website simülasyon laboratuvarı.",
     image: "/logo.png",
   },
-  // {
-  //   id: "6",
-  //   title: "CTFGo",
-  //   description:
-  //     "CTFGo, Golang programlama dili ile yazılmış bir CTF platformudur.",
-  //   image: "/ctfgo.png",
-  // },
 ];
 
 export default function OurProjects() {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const [activeSlide, setActiveSlide] = useState(null);
   const pagination = {
     clickable: true,
@@ -200,17 +184,19 @@ export default function OurProjects() {
           </Card>
         </SwiperSlide>
       ))}
-      <Box className="slider-controler">
-        <Box
-          sx={{ color: "#73CD07 !important", px: "10px" }}
-          className="swiper-button-prev slider-arrow"
-        />
-        <Box
-          sx={{ color: "#73CD07 !important" }}
-          className="swiper-button-next slider-arrow"
-        />
-        {/* <Box className="swiper-pagination" /> */}
-      </Box>
+      {isMobile ? null : (
+        <Box className="slider-controler">
+          <Box
+            sx={{ color: "#73CD07 !important", px: "10px" }}
+            className="swiper-button-prev slider-arrow"
+          />
+          <Box
+            sx={{ color: "#73CD07 !important" }}
+            className="swiper-button-next slider-arrow"
+          />
+          {/* <Box className="swiper-pagination" /> */}
+        </Box>
+      )}
     </Swiper>
   );
 }

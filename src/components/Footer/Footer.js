@@ -79,11 +79,14 @@ export const Footer = () => {
           xs={12}
           sx={{
             display: "flex",
+            ...(isMobile ? { flexDirection: "column-reverse" } : "row"),
             alignItems: "center",
             justifyContent: "space-between",
           }}
         >
-          <Typography>
+          <Typography
+            sx={{ ...(isMobile ? { mt: "30px" } : null), textAlign: "center" }}
+          >
             {new Date().getFullYear() != 2020 ? " 2020 -" : null}{" "}
             {new Date().getFullYear()} © Yavuzlar Web Güvenliği ve Yazılım
             Takımı
@@ -94,6 +97,7 @@ export const Footer = () => {
               <Link
                 key={social.id}
                 href={social.link}
+                target="_blank"
                 style={{ marginLeft: "30px" }}
               >
                 <img
@@ -105,29 +109,28 @@ export const Footer = () => {
               </Link>
             ))}
           </Box>
-
-          <ScrollTop
-            style={{
-              backgroundColor: "rgba(115, 205, 7, 0.6)",
-              borderRadius: "50%",
-              width: "40px",
-              height: "40px",
-              color: "white",
-              transition: "transform 0.2s",
-              "&:hover button": {
-                backgroundColor: "#f00",
-              },
-              ...(scrollTop >= pageHeight - 100
-                ? {
-                    transform: isMobile
-                      ? "translate(12px, -80px)"
-                      : "translateX(12px)",
-                  }
-                : { transform: "translate(0, 0)" }),
-            }}
-            target="window"
-          />
         </Grid>
+        <ScrollTop
+          style={{
+            backgroundColor: "rgba(115, 205, 7, 0.6)",
+            borderRadius: "50%",
+            width: "40px",
+            height: "40px",
+            color: "white",
+            transition: "transform 0.2s",
+            "&:hover button": {
+              backgroundColor: "#f00",
+            },
+            ...(scrollTop >= pageHeight - 100
+              ? {
+                  transform: isMobile
+                    ? "translate(12px, -80px)"
+                    : "translateX(12px)",
+                }
+              : { transform: "translate(0, 0)" }),
+          }}
+          target="window"
+        />
       </Grid>
     </Box>
   );
