@@ -25,7 +25,7 @@ const navItems = [
   {
     id: "2",
     title: "Yazılarımız",
-    path: "https://book.siberyavuzlar.com/",
+    path: "https://docs.yavuzlar.org/",
   },
   {
     id: "3",
@@ -38,7 +38,7 @@ const drawerItems = [
   {
     id: "1",
     title: "Yazılarımız",
-    path: "https://book.siberyavuzlar.com/",
+    path: "https://docs.yavuzlar.org/",
   },
   {
     id: "2",

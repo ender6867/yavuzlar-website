@@ -1,4 +1,5 @@
-import { Grid } from "@mui/material";
+"use client";
+import { Grid, useMediaQuery } from "@mui/material";
 import React from "react";
 import OneCard from "./OneCard/OneCard";
 
@@ -26,8 +27,10 @@ const cards = [
 ];
 
 export const Cards = () => {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
   return (
-    <Grid container spacing={8}>
+    <Grid container spacing={8} sx={{ ...(isMobile ? { mt: "150px" } : null) }}>
       {cards.map((card, index) => (
         <Grid item xs={12} md={4} key={index}>
           <OneCard {...card} />

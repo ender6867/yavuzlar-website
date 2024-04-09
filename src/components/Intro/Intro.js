@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography, useMediaQuery } from "@mui/material";
 
 const scrollToId = (path) => {
   const element = document.getElementById(path);
@@ -9,6 +9,8 @@ const scrollToId = (path) => {
 };
 
 export const Intro = () => {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
   return (
     <Box sx={{ height: "100%" }}>
       <div className="gradientIntro" />
@@ -36,7 +38,10 @@ export const Intro = () => {
             flex: "1",
           }}
         >
-          <Typography sx={{ fontWeight: "bold" }} variant="h3">
+          <Typography
+            sx={{ fontWeight: "bold", ...(isMobile ? { mt: "180px" } : null) }}
+            variant="h3"
+          >
             <a
               href="https://sibervatan.org/"
               target="_blank"

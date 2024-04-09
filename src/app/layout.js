@@ -1,4 +1,3 @@
-
 import "./globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import { Container } from "@mui/material";
@@ -9,12 +8,11 @@ export const metadata = {
   title: "Yavuzlar",
   description: "Yavuzlar Web Güvenliği ve Yazılım Takımı",
   icons: {
-    icon: '/yavuzlar-logo-siyah-stroke-kare.png',
+    icon: "/yavuzlar-logo-black-stroke-kare.png",
   },
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en" translate="no">
       <body>
