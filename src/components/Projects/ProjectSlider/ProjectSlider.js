@@ -16,6 +16,7 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
+import Link from "next/link";
 
 const projects = [
   {
@@ -24,6 +25,8 @@ const projects = [
     description:
       "Yazılım dillerini pratik bir şekilde deneyimleyebilecekleri ve yazılım geliştirme becerilerini geliştirebilecekleri laboratuvar ortamıdır.",
     image: "/logo.png",
+    gitImg: "/coming-soon3.png",
+    path: "",
   },
   {
     id: "2",
@@ -31,6 +34,8 @@ const projects = [
     description:
       "Web zafiyetlerinin uygulamalı olarak öğrenilebileceği web uygulama güvenliği laboratuvar ortamıdır.",
     image: "/vulnlab.png",
+    gitImg: "/gitHub.svg",
+    path: "http://yavuzlar.org/vulnlab",
   },
   {
     id: "3",
@@ -38,6 +43,8 @@ const projects = [
     description:
       "CTFgo, Go programlama dili ile geliştirilen Capture The Flag (CTF) platformudur.",
     image: "/ctfgo.png",
+    gitImg: "/coming-soon3.png",
+    path: "",
   },
   {
     id: "5",
@@ -45,11 +52,13 @@ const projects = [
     description:
       "Web uygulama güvenliği zafiyetlerinin pratiğinin yapılabileceği gerçek bir website simülasyon laboratuvarı.",
     image: "/logo.png",
+    gitImg: "/coming-soon3.png",
+    path: "",
   },
 ];
 
 export default function OurProjects() {
-  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
   const [activeSlide, setActiveSlide] = useState(null);
   const pagination = {
     clickable: true,
@@ -57,6 +66,7 @@ export default function OurProjects() {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
+
   return (
     <Swiper
       effect={"coverflow"}
@@ -92,98 +102,125 @@ export default function OurProjects() {
       }}
       style={{ maxWidth: "1100px" }}
     >
-      {projects.map((project, index) => (
-        <SwiperSlide
-          key={project.id}
-          // style={{ width: "300px !important" }}
-          className="swiper-slide"
-        >
-          <Card
-            sx={{
-              width: "100%",
-              borderRadius: "20px",
-              backgroundColor: "transparent",
-              background: "rgba(255,255,255,0.1)",
-              backdropFilter: "blur(10px)",
-              filter: activeSlide != index ? "blur(4px)" : "blur(0px)",
-            }}
-          >
-            <CardContent
+      {projects.map((project, index) => {
+        // let mtValue = project.gitImg.startsWith("/coming") ? "53px" : "0px";
+        let mtValue;
+
+        isMobile
+          ? (mtValue = project.gitImg.startsWith("/coming") ? "35px" : "0px")
+          : (mtValue = project.gitImg.startsWith("/coming") ? "53px" : "0px");
+
+        let hwValue = isMobile ? "40" : "60";
+
+        return (
+          <SwiperSlide key={project.id} className="swiper-slide">
+            <Card
               sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-                py: "64px !important",
-                gap: "40px",
-                px: 0,
+                width: "100%",
+                borderRadius: "20px",
+                backgroundColor: "transparent",
+                background: "rgba(255,255,255,0.1)",
+                backdropFilter: "blur(10px)",
+                filter: activeSlide != index ? "blur(4px)" : "blur(0px)",
               }}
             >
-              <Box
+              <CardContent
                 sx={{
-                  width: { xs: "150px", md: "250px" },
-                  height: { xs: "150px", md: "250px" },
-                }}
-              >
-                <CardMedia
-                  sx={{ borderRadius: "20px" }}
-                  component="img"
-                  image={project.image}
-                />
-              </Box>
-              <Box
-                sx={{
-                  width: "100%",
-                  position: "relative",
                   display: "flex",
                   alignItems: "center",
-
-                  "& .MuiDivider-root": {
-                    borderColor: "#73CD07",
-                  },
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  py: "64px !important",
+                  gap: "40px",
+                  px: 0,
                 }}
               >
-                <img
-                  src={"/gitHub.svg"}
-                  alt="image"
-                  height={60}
-                  width={60}
-                  style={{
-                    position: "absolute",
-                    right: "10%",
+                <Box
+                  sx={{
+                    width: { xs: "150px", md: "250px" },
+                    height: { xs: "150px", md: "250px" },
                   }}
-                />
-
-                <Box sx={{ width: "100%" }}>
-                  <Divider />
+                >
+                  <CardMedia
+                    sx={{ borderRadius: "20px" }}
+                    component="img"
+                    image={project.image}
+                  />
                 </Box>
-              </Box>
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "8px" }}
-              >
-                <Typography
-                  className="title"
+                <Box
                   sx={{
-                    textAlign: "center",
+                    width: "100%",
+                    position: "relative",
+                    display: "flex",
+                    alignItems: "center",
+
+                    "& .MuiDivider-root": {
+                      borderColor: "#73CD07",
+                    },
                   }}
                 >
-                  {project.title}
-                </Typography>
-                <Typography
-                  sx={{
-                    textAlign: "center",
-                    maxWidth: "40ch",
-                  }}
-                  variant="body2"
-                  color="white"
+                  {project.path ? (
+                    <Link
+                      href={project.path}
+                      target="_blank"
+                      style={{
+                        marginTop: mtValue,
+                        position: "absolute",
+                        right: "10%",
+                      }}
+                    >
+                      <img
+                        src={project.gitImg}
+                        alt="image"
+                        height={hwValue}
+                        width={hwValue}
+                      />
+                    </Link>
+                  ) : (
+                    <img
+                      src={project.gitImg}
+                      alt="image"
+                      height={hwValue}
+                      width={hwValue}
+                      style={{
+                        marginTop: mtValue,
+                        position: "absolute",
+                        right: "10%",
+                      }}
+                    />
+                  )}
+
+                  <Box sx={{ width: "100%" }}>
+                    <Divider />
+                  </Box>
+                </Box>
+                <Box
+                  sx={{ display: "flex", flexDirection: "column", gap: "8px" }}
                 >
-                  {project.description}
-                </Typography>
-              </Box>
-            </CardContent>
-          </Card>
-        </SwiperSlide>
-      ))}
+                  <Typography
+                    className="title"
+                    style={{
+                      textAlign: "center",
+                    }}
+                  >
+                    {project.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                      maxWidth: "40ch",
+                    }}
+                    variant="body2"
+                    color="white"
+                  >
+                    {project.description}
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+          </SwiperSlide>
+        );
+      })}
       {isMobile ? null : (
         <Box className="slider-controler">
           <Box
