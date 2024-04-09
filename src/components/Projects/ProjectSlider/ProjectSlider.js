@@ -89,6 +89,7 @@ export default function OurProjects() {
 
 
         "& .swiper-pagination-bullet": {
+          ...(isMobile ? { display: "none" } : {}),
           width: "24px",
           height: "24px",
           textAlign: "center",
