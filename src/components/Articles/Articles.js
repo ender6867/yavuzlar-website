@@ -5,7 +5,7 @@ const articles = [
   {
     id: "1",
     title: "Docker Escape",
-    path: "https://book.siberyavuzlar.com/privileged/docker-escape",
+    path: "https://docs.yavuzlar.org/privileged/docker-escape",
 
     image: "/docker.png",
     logo: "/logo.png",
@@ -13,28 +13,28 @@ const articles = [
   {
     id: "2",
     title: "Güvenli Kodlama (Secure Coding)",
-    path: "https://book.siberyavuzlar.com/yazilim/guvenli-kodlama-secure-coding",
+    path: "https://docs.yavuzlar.org/yazilim/guvenli-kodlama-secure-coding",
     image: "/secure_coding_4.png",
     logo: "/logo.png",
   },
   {
     id: "3",
     title: "Sanal Özel Ağlar (VPN)",
-    path: "https://book.siberyavuzlar.com/ag-guevenligi-ve-gizliligi/vpn",
+    path: "https://docs.yavuzlar.org/ag-guevenligi-ve-gizliligi/vpn",
     image: "/vpn.jpg",
     logo: "/logo.png",
   },
   {
     id: "4",
     title: "Nmap",
-    path: "https://book.siberyavuzlar.com/araclar/nmap",
+    path: "https://docs.yavuzlar.org/araclar/nmap",
     image: "/nmap.png",
     logo: "/logo.png",
   },
   {
     id: "5",
     title: "Two Factor Authentication Bypass",
-    path: "https://book.siberyavuzlar.com/web-guevenligi/two-factor-authentication-bypass",
+    path: "https://docs.yavuzlar.org/web-guevenligi/two-factor-authentication-bypass",
     image: "/2FA.jpg",
     logo: "/logo.png",
   },
