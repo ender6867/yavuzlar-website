@@ -181,7 +181,7 @@ export default function OurProjects() {
                 sx={{
                   display: isSlideActive ? "block" : "none",
                   width: "100%",
-                  height: "580px",
+                  height: isMobile ? "480px" : "580px",
                   borderRadius: "20px",
                   backgroundColor: "transparent",
                   background: "rgba(255,255,255,0.1)",
