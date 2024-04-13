@@ -1,8 +1,6 @@
+import Head from "@/layout/components/Head";
 import "./globals.css";
-import Navbar from "../components/Navbar/Navbar";
-import { Container } from "@mui/material";
-import Footer from "@/components/Footer/Footer";
-import ThemeComponent from "@/components/ThemeComponent/ThemeComponent";
+import Layout from "@/layout";
 
 export const metadata = {
   title: "Yavuzlar",
@@ -15,18 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" translate="no">
+      <Head />
+
       <body>
-        <ThemeComponent>
-          <Container maxWidth="mdlg">
-            <Navbar />
-          </Container>
-
-          <Container maxWidth="mdlg">{children}</Container>
-
-          <Container maxWidth="mdlg">
-            <Footer />
-          </Container>
-        </ThemeComponent>
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );
