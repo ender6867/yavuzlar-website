@@ -4,6 +4,20 @@ import Link from "next/link";
 const articles = [
   {
     id: "1",
+    title: "IoT Güvenliği Nedir?",
+    path: "https://docs.yavuzlar.org/diger/iot-security",
+    image: "https://docs.yavuzlar.org/~gitbook/image?url=https:%2F%2F10693534-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FpHJ8OuTO6xpfwqkn7vmg%252Fuploads%252Fgit-blob-0957f77fc645bf9768b4c8c4c4bbf4edb499dd38%252Fiot2-768x432.png%3Falt=media&width=768&dpr=1&quality=100&sign=de74e3313297b4649aefa40d3a44b39420cc4a28da3006815cf4775b1c06c73c",
+    logo: "/logo.png",
+  },
+  {
+    id: "2",
+    title: "SSH",
+    path: "https://docs.yavuzlar.org/~gitbook/image?url=https:%2F%2F10693534-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FpHJ8OuTO6xpfwqkn7vmg%252Fuploads%252Fgit-blob-2c30a46aee51171fc9062b60a47a1e99f0796eb0%252Fssh_cover.jpeg%3Falt=media&width=768&dpr=1&quality=100&sign=ceb4fcfe57c2d005c42247ebd8229ea2a0d53cc6a59db6aa9a35647d1791e26a",
+    image: "/docker.png",
+    logo: "/logo.png",
+  },
+  {
+    id: "3",
     title: "Docker Escape",
     path: "https://docs.yavuzlar.org/privileged/docker-escape",
 
@@ -11,31 +25,17 @@ const articles = [
     logo: "/logo.png",
   },
   {
-    id: "2",
+    id: "4",
     title: "Güvenli Kodlama (Secure Coding)",
     path: "https://docs.yavuzlar.org/yazilim/guvenli-kodlama-secure-coding",
     image: "/secure_coding_4.png",
     logo: "/logo.png",
   },
   {
-    id: "3",
+    id: "5",
     title: "Sanal Özel Ağlar (VPN)",
     path: "https://docs.yavuzlar.org/ag-guevenligi-ve-gizliligi/vpn",
     image: "/vpn.jpg",
-    logo: "/logo.png",
-  },
-  {
-    id: "4",
-    title: "Nmap",
-    path: "https://docs.yavuzlar.org/araclar/nmap",
-    image: "/nmap.png",
-    logo: "/logo.png",
-  },
-  {
-    id: "5",
-    title: "Two Factor Authentication Bypass",
-    path: "https://docs.yavuzlar.org/web-guevenligi/two-factor-authentication-bypass",
-    image: "/2FA.jpg",
     logo: "/logo.png",
   },
 ];

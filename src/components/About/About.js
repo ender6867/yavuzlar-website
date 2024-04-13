@@ -14,7 +14,7 @@ const countInfo = [
     image: "/projects.png",
   },
   {
-    number: "39",
+    number: "41",
     name: "Makale",
     image: "/article.png",
   },

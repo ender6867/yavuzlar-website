@@ -48,7 +48,7 @@ const projects = [
   },
   {
     id: "4",
-    title: "VulnWeb",
+    title: "VulnMedia",
     description:
       "Web uygulama güvenliği zafiyetlerinin pratiğinin yapılabileceği gerçek bir website simülasyon laboratuvarı.",
     image: "/logo.png",
