@@ -1,5 +1,4 @@
 "use client";
-import { Head } from 'next/document';
 import { useEffect } from 'react'
 
 const HeadC = () => {
@@ -12,9 +11,9 @@ const HeadC = () => {
     }, [])
 
     return (
-        <Head>
+        <head>
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-72GT07QVDX"></script>
-        </Head>
+        </head>
     )
 }
 
