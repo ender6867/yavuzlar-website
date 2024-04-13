@@ -12,8 +12,8 @@ const articles = [
   {
     id: "2",
     title: "SSH",
-    path: "https://docs.yavuzlar.org/~gitbook/image?url=https:%2F%2F10693534-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FpHJ8OuTO6xpfwqkn7vmg%252Fuploads%252Fgit-blob-2c30a46aee51171fc9062b60a47a1e99f0796eb0%252Fssh_cover.jpeg%3Falt=media&width=768&dpr=1&quality=100&sign=ceb4fcfe57c2d005c42247ebd8229ea2a0d53cc6a59db6aa9a35647d1791e26a",
-    image: "/docker.png",
+    path: "https://docs.yavuzlar.org/protokoller/ssh",
+    image: "https://docs.yavuzlar.org/~gitbook/image?url=https:%2F%2F10693534-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FpHJ8OuTO6xpfwqkn7vmg%252Fuploads%252Fgit-blob-2c30a46aee51171fc9062b60a47a1e99f0796eb0%252Fssh_cover.jpeg%3Falt=media&width=768&dpr=1&quality=100&sign=ceb4fcfe57c2d005c42247ebd8229ea2a0d53cc6a59db6aa9a35647d1791e26a",
     logo: "/logo.png",
   },
   {
