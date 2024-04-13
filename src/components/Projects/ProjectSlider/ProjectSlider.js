@@ -89,7 +89,6 @@ export default function OurProjects() {
 
 
         "& .swiper-pagination-bullet": {
-          ...(isMobile ? { display: "none" } : {}),
           width: "24px",
           height: "24px",
           textAlign: "center",
@@ -120,6 +119,7 @@ export default function OurProjects() {
         "& .slider-controller": {
           ...(
             isMobile ? {
+              display: "none",
               position: "absolute",
               width: "100%",
               mt: projects?.length > 7 ? "-32px" : "-24px",
