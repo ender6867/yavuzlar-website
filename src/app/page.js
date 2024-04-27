@@ -1,6 +1,9 @@
-import Homepage from "./HomePage/page";
+'use client'
 
-export const Home = () => {
-  return <Homepage />;
-};
-export default Home;
+import Homepage from "../layout/components/HomePage";
+
+export default function Page() {
+  return (
+    <Homepage />
+  )
+}
