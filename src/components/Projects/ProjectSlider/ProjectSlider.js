@@ -30,7 +30,7 @@ const projects = [
   },
   {
     id: "2",
-    title: "Devpath",
+    title: "CodinLab",
     description:
       "Yazılım dillerini pratik bir şekilde deneyimleyebilecekleri ve yazılım geliştirme becerilerini geliştirebilecekleri laboratuvar ortamıdır.",
     image: "/logo.png",
